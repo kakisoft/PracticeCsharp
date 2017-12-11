@@ -14,6 +14,9 @@ class MyApp {
     const string CONST_MSG = "CONST MESSAGE";
     Console.WriteLine(CONST_MSG);
 
+    //==============================
+    //            型
+    //==============================
 
     // 文字列、文字
     // string, char
@@ -31,11 +34,41 @@ class MyApp {
 
     // 論理値
     // bool -> true, false
-    bool flag = true;
+    bool flag1 = true;
 
     // 型推論
-    var x = 5; // int
-    var y = "world"; // string
+    var m = 5; // int
+    var n = "world"; // string
+
+    //==============================
+    //           演算
+    //==============================
+    // + - * / %
+    var x = 10; // int
+    Console.WriteLine(x / 3); // 3
+    Console.WriteLine(x % 3); // 1
+    Console.WriteLine(x / 3.0); // 3.333....
+    Console.WriteLine(x / (double)3); // 3.333....
+
+    // ++ --
+    var y = 5;
+    y++;
+    Console.WriteLine(y); // 6
+    y--;
+    Console.WriteLine(y); // 5
+
+    var z = 6;
+    // z = z + 10;
+    z += 10;
+
+    // AND OR NOT
+    // && || !
+    var flag = true;
+    Console.WriteLine(!flag);
+
+    //==============================
+    //          文字列
+    //==============================
 
   }
 }
