@@ -1,5 +1,61 @@
 using System;
 
+//==============================
+//          クラス
+//==============================
+class User {
+  public string name;
+
+  //コンストラクタ
+  public User(string name) {
+    this.name = name;
+  }
+  // public User() { // オーバーロード
+  //   this.name = "nobody";
+  // }
+  public User(): this("nobody") {
+  }
+  
+  public virtual void SayHi() {//オーバーライドするには、virtual宣言が必要。
+    // Console.WriteLine($"hi {this.name}");
+    Console.WriteLine($"hi {name}");
+  }
+}
+
+//-------------
+class Staff {
+  private string name = "me!";
+  // プロパティ
+  public string Name {
+    get { return this.name; } // getter
+    set {
+      if (value != "") {
+        this.name = value;
+      }
+    } // setter
+  }
+  public string Post { get; set; } = "None";
+}
+
+//==============================
+//           継承
+//==============================
+//※デフォルトでは、コンストラクタは継承されない。
+//↓親のコンストラクタを使用している。
+class AdminUser: User {
+  public AdminUser(string name): base(name) {
+  }
+  public void SayHello() {
+    Console.WriteLine($"hello {name}");
+  }
+  public override void SayHi() { // override
+    Console.WriteLine($"[admin] hi {name}");
+  }
+}
+
+//------------------------------
+//           
+//------------------------------
 class MyApp {
 
   static void SayHi1() {
@@ -205,5 +261,33 @@ class MyApp {
     SayHi4("Tom", 30); // tom 30
     SayHi4("Bob"); // bob 23
     SayHi4(age: 26, name: "Steve"); // steve 26
+
+    //==============================
+    //         クラス
+    //==============================
+    User user = new User(); // インスタンス
+    Console.WriteLine(user.name); // me
+    user.SayHi(); // hi! me
+    user.name = "taguchi";
+    user.SayHi(); // hi! taguchi
+
+    User tom = new User("Tom");
+    tom.SayHi();
+    User user2 = new User();
+    user2.SayHi();
+
+    AdminUser bob = new AdminUser("Bob");
+    bob.SayHi();
+    bob.SayHello();
+
+    //==============================
+    //         プロパティ
+    //==============================
+    Staff staff = new Staff();
+    Console.WriteLine(staff.Name);
+    staff.Name = "taguchi";
+    Console.WriteLine(staff.Name);
+    staff.Post = "Chief ";
+    Console.WriteLine(staff.Post);
   }
 }
