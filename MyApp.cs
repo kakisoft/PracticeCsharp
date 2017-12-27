@@ -6,7 +6,7 @@ using System;
 class User {
   public string name;
 
-  //コンストラクタ
+  //===== コンストラクタ =====
   public User(string name) {
     this.name = name;
   }
@@ -20,21 +20,7 @@ class User {
     // Console.WriteLine($"hi {this.name}");
     Console.WriteLine($"hi {name}");
   }
-}
 
-//-------------
-class Staff {
-  private string name = "me!";
-  // プロパティ
-  public string Name {
-    get { return this.name; } // getter
-    set {
-      if (value != "") {
-        this.name = value;
-      }
-    } // setter
-  }
-  public string Post { get; set; } = "None";
 }
 
 //==============================
@@ -50,6 +36,30 @@ class AdminUser: User {
   }
   public override void SayHi() { // override
     Console.WriteLine($"[admin] hi {name}");
+  }
+}
+
+//===== プロパティ =====
+class Staff {
+  private string name = "me!";
+  // プロパティ
+  public string Name {
+    get { return this.name; } // getter
+    set {
+      if (value != "") {
+        this.name = value;
+      }
+    } // setter
+  }
+  public string Post { get; set; } = "None";
+}
+
+//===== インデクサ =====
+class Team {
+  private string[] members = new string[3];
+  public string this[int i] {
+    get { return this.members[i]; }
+    set { this.members[i] = value; }
   }
 }
 
@@ -108,6 +118,15 @@ class MyApp {
     // 型推論
     var m = 5; // int
     var n = "world"; // string
+
+    Console.WriteLine(s);
+    Console.WriteLine(c);
+    Console.WriteLine(i1);
+    Console.WriteLine(d);
+    Console.WriteLine(f);
+    Console.WriteLine(flag1);
+    Console.WriteLine(m);
+    Console.WriteLine(n);
 
     //==============================
     //           演算
@@ -238,6 +257,8 @@ class MyApp {
 
     scoresA4[1] = 40;
     Console.WriteLine(scoresA4[1]);
+    Console.WriteLine(scoresA2);
+    Console.WriteLine(scoresA3);
 
     //==============================
     //         foreach
@@ -289,5 +310,14 @@ class MyApp {
     Console.WriteLine(staff.Name);
     staff.Post = "Chief ";
     Console.WriteLine(staff.Post);
+
+    //==============================
+    //         インデクサ
+    //==============================
+    Team giants = new Team();
+    giants[0] = "taguchi";
+    giants[1] = "fkoji";
+    giants[2] = "dotinstall";
+    Console.WriteLine(giants[1]);    
   }
 }
