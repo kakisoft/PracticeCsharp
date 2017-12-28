@@ -1,13 +1,21 @@
 using System;
 
+  /*
+    comment
+  */
+
 //==============================
 //          クラス
 //==============================
 class User {
+  private static int count = 0;
   public string name;
 
-  //===== コンストラクタ =====
+  //--------------------
+  //   コンストラクタ
+  //--------------------
   public User(string name) {
+    User.count++;
     this.name = name;
   }
   // public User() { // オーバーロード
@@ -21,6 +29,9 @@ class User {
     Console.WriteLine($"hi {name}");
   }
 
+  public static void GetCount() {
+    Console.WriteLine($"# of instances: {count}");
+  }
 }
 
 //==============================
@@ -39,7 +50,9 @@ class AdminUser: User {
   }
 }
 
-//===== プロパティ =====
+//==============================
+//        プロパティ
+//==============================
 class Staff {
   private string name = "me!";
   // プロパティ
@@ -54,12 +67,33 @@ class Staff {
   public string Post { get; set; } = "None";
 }
 
-//===== インデクサ =====
+//==============================
+//        インデクサ
+//==============================
 class Team {
   private string[] members = new string[3];
   public string this[int i] {
     get { return this.members[i]; }
     set { this.members[i] = value; }
+  }
+}
+
+//==============================
+//        抽象クラス
+//==============================
+abstract class Invader {
+  public abstract void SayHi();
+}
+
+class Japanese: Invader {
+  public override void SayHi() {
+    Console.WriteLine("こんにちは！");
+  }
+}
+
+class American: Invader {
+  public override void SayHi() {
+    Console.WriteLine("hi!");
   }
 }
 
@@ -80,9 +114,6 @@ class MyApp {
     Console.WriteLine($"hi! {name} ({age})");
   }
 
-  /*
-    comment
-  */
   static void Main() {
 
     //変数
@@ -319,5 +350,23 @@ class MyApp {
     giants[1] = "fkoji";
     giants[2] = "dotinstall";
     Console.WriteLine(giants[1]);    
+
+    User.GetCount(); // 0
+    User userA1 = new User();
+    User userA2 = new User();
+    User userA3 = new User();
+    User.GetCount(); // 3
+
+    Console.WriteLine(userA1);    
+    Console.WriteLine(userA2);    
+    Console.WriteLine(userA3);    
+
+    //==============================
+    //        抽象クラス
+    //==============================
+    Japanese aki = new Japanese();
+    aki.SayHi();
+    American mike = new American();
+    mike.SayHi();
   }
 }
