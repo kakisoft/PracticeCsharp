@@ -1,8 +1,9 @@
 using System;
+using DotinstallNamespace;
 
-  /*
-    comment
-  */
+/*
+  comment
+*/
 
 //==============================
 //          クラス
@@ -26,11 +27,11 @@ class User {
   
   public virtual void SayHi() {//オーバーライドするには、virtual宣言が必要。
     // Console.WriteLine($"hi {this.name}");
-    Console.WriteLine($"hi {name}");
+    Console.WriteLine($"hi {name}"); //C# 6 以降。$を先頭に着けると、直接文字列を記述できる。
   }
 
   public static void GetCount() {
-    Console.WriteLine($"# of instances: {count}");
+    Console.WriteLine($"# of instances: {count}");//System.console.WriteLine
   }
 }
 
@@ -97,9 +98,68 @@ class American: Invader {
   }
 }
 
-//------------------------------
+//==============================
+//        インターフェース
+//==============================
+interface ISharable {
+  void Share();
+}
+
+class Partner: ISharable {
+  public void Share() {
+    Console.WriteLine("now sharing...");
+  }
+}
+
+//==============================
+//      ジェネリック
+//==============================
+class MyData<T> {
+  public void GetThree(T x) {
+    Console.WriteLine(x);
+    Console.WriteLine(x);
+    Console.WriteLine(x);
+  }
+}
+//Genericを使用しない場合
+class MyInteger {
+  public void GetThree(int x) {
+    Console.WriteLine(x);
+    Console.WriteLine(x);
+    Console.WriteLine(x);
+  }
+}
+
+//==============================
+//       名前空間
+//==============================
+namespace DotinstallNamespace {
+  class Player {
+    public void SayHi() {
+      // Console.WriteLine("hi!");
+      System.Console.WriteLine("hi!");
+    }
+  }
+}
+
+//==============================
+//         構造体
+//==============================
+struct Point {
+  public int X { get; }
+  public int Y { get; }
+  public Point(int x, int y) {
+    X = x;
+    Y = y;
+  }
+  public void GetInfo() {
+    Console.WriteLine($"({X}:{Y})");
+  }
+}
+
+/////////////////////////////////////
 //           
-//------------------------------
+/////////////////////////////////////
 class MyApp {
 
   static void SayHi1() {
@@ -198,7 +258,7 @@ class MyApp {
 
     Console.WriteLine(string.Format("{0} [{1}]", name1, score1)); // taguchi [52.3]
 
-    Console.WriteLine($"{name1} [{score1}]");
+    Console.WriteLine($"{name1} [{score1}]");//C# 6以降
     Console.WriteLine($"{name1, -10} [{score1, 10}]");
     Console.WriteLine($"{name1, -10} [{score1, 10:0.00}]");
     Console.WriteLine($"{name1, -10} [{score1 + 25, 10:0.00}]");
@@ -368,5 +428,39 @@ class MyApp {
     aki.SayHi();
     American mike = new American();
     mike.SayHi();
+
+    //==============================
+    //        インターフェース
+    //==============================
+    Partner partner = new Partner();
+    partner.Share();
+
+    //==============================
+    //        ジェネリック
+    //==============================
+    MyData<string> s1 = new MyData<string>();
+    s1.GetThree("hello");
+    MyData<double> g1 = new MyData<double>();
+    g1.GetThree(23.3);
+
+    MyInteger mi = new MyInteger();
+    mi.GetThree(55);
+
+    //==============================
+    //        名前空間
+    //==============================
+    DotinstallNamespace.Player player1 = new DotinstallNamespace.Player();
+    Player player2 = new Player(); //using宣言しておけば、namespace省略可。
+    player1.SayHi();
+    player2.SayHi();
+
+    //==============================
+    //         構造体
+    //==============================
+    Point p1 = new Point(5, 3);
+    Point p2 = new Point(12, 4);
+    p1.GetInfo();
+    p2.GetInfo();
+
   }
 }
