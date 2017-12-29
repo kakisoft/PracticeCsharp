@@ -157,6 +157,49 @@ struct Point {
   }
 }
 
+//==============================
+//         列挙型
+//==============================
+enum Direction {
+  Stay = 0,
+  Right = 1,
+  Left = -1
+}
+
+enum ProductCategory {
+  DailyGoods,     // 0
+  BrokenArticle,  // 1
+  ArtWork         // 2
+}
+
+//==============================
+//          例外
+//==============================
+class MyException: Exception {
+  public MyException(string msg): base(msg) {
+
+  }
+}
+
+class MyExceptionPractice{
+  public static void Div(int a, int b) {
+    try {
+      if (b < 0) {
+        // 例外
+        throw new MyException("not minus!");
+      }
+      Console.WriteLine(a / b);
+    } catch (DivideByZeroException e) {
+      Console.WriteLine(e.Message);
+    } catch (MyException e) {
+      Console.WriteLine(e.Message);
+    } finally {
+      Console.WriteLine(" -- end -- ");
+    }
+  }
+}
+
+
 /////////////////////////////////////
 //           
 /////////////////////////////////////
@@ -462,5 +505,31 @@ class MyApp {
     p1.GetInfo();
     p2.GetInfo();
 
+    //==============================
+    //         列挙型
+    //==============================
+    Direction dir = Direction.Right;
+    Console.WriteLine((int)Direction.Right);
+
+    switch (dir) {
+      case Direction.Stay:
+        // そのまま
+        break;
+      case Direction.Right:
+        // 右へ
+        break;
+      case Direction.Left:
+        // 左へ
+        break;
+    }
+
+    //==============================
+    //          例外
+    //==============================
+    MyExceptionPractice.Div(10, 0);
+    MyExceptionPractice.Div(10, -3);
+
   }
+
+
 }
