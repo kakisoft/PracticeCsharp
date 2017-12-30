@@ -1,6 +1,7 @@
 using System;
 using DotinstallNamespace;
 using System.Collections.Generic;
+using System.Linq;
 
 /*
   comment
@@ -279,8 +280,8 @@ class MyApp {
     bool flag1 = true;
 
     // 型推論
-    var m = 5; // int
-    var n = "world"; // string
+    var m1 = 5; // int
+    var n1 = "world"; // string
 
     Console.WriteLine(s);
     Console.WriteLine(c);
@@ -288,8 +289,8 @@ class MyApp {
     Console.WriteLine(d);
     Console.WriteLine(f);
     Console.WriteLine(flag1);
-    Console.WriteLine(m);
-    Console.WriteLine(n);
+    Console.WriteLine(m1);
+    Console.WriteLine(n1);
 
     //==============================
     //           演算
@@ -645,6 +646,34 @@ class MyApp {
     registrants["taguchi"] = 60;
     foreach (KeyValuePair<string, int> registrant in registrants) {
       Console.WriteLine($"{registrant.Key}: {registrant.Value}");
+    }
+
+    //==============================
+    //         LINQ
+    //==============================
+    //要 using System.Linq;
+    List<double> prices = new List<double>() { 53.2, 48.2, 32.8 };
+
+    //------------
+    //    SQL
+    //------------
+    var resultsA = from price in prices
+      where price * 1.08 > 50.0
+      select price * 1.08;    
+
+    foreach (var result in resultsA) {
+      Console.WriteLine(result);
+    }
+
+    //------------
+    //   Method 
+    //------------
+    var results = prices
+      .Select(n => n * 1.08)
+      .Where(n => n > 50.0);
+
+    foreach (var result in results) {
+      Console.WriteLine(result);
     }
 
   }
