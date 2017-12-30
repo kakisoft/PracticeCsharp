@@ -220,7 +220,7 @@ class MyApp {
   //          デリゲート
   //==============================
   //デリゲートがある事で、メソッドを変数として扱える。
-  delegate void MyDelegate();
+  delegate void MyDelegate(); // 引数無し
   static void SayHiFromDeligater() => Console.WriteLine("hi!(From Delegate)"); //デリゲート登録するメソッド
   static void SayHelloFromDeligater() => Console.WriteLine("hello!(From Delegate)");
   //↑と同義
@@ -554,5 +554,26 @@ class MyApp {
 
     ShowMessage(); // 実行
 
+    //==============================
+    //         匿名メソッド
+    //==============================
+    MyDelegate ShowMessage2;
+    ShowMessage2 = delegate {
+      Console.WriteLine("hi!(Anonymous methods)");
+    };
+
+    ShowMessage2();
+
+    //==============================
+    //         ラムダ式
+    //==============================
+    MyDelegate ShowMessage3;
+    // ラムダ式: 引数 => 処理
+    ShowMessage3 = () => {
+      Console.WriteLine("hi!(Lambda expression)");
+    };
+    ShowMessage3 += () => Console.WriteLine("hello!(Lambda expression)");
+
+    ShowMessage3();
   }
 }
