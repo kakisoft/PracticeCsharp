@@ -1,5 +1,6 @@
 using System;
 using DotinstallNamespace;
+using System.Collections.Generic;
 
 /*
   comment
@@ -597,6 +598,54 @@ class MyApp {
     // メソッドを登録できる（以下ではラムダ式を使用している）
     btn.MyEvent += () => Console.WriteLine("Button Clicked!"); 
     btn.OnClicked();
+
+    //==============================
+    // Collection
+    // - List（データの集合）
+    // - HashSet（順番を持たない、かつ重複を許さないデータの集合。順番を指定してアクセスする事はできない。）
+    // - Dictionary（キーと値でデータを管理していくデータの集合）
+    //※要using System.Collections.Generic;
+    //==============================
+
+    //------------
+    //    List  
+    //------------
+    List<int> scoresA = new List<int>();
+    scoresA.Add(30);
+    scoresA.Add(80);
+    scoresA.Add(60);
+
+    List<int> scoresB = new List<int>() { 30, 80 , 60 };
+    scoresB[1] = 100;
+    Console.WriteLine(scoresB.Count);
+    foreach (var score in scoresB) {
+      Console.WriteLine(score);
+    }
+
+    //------------
+    //  HashSet  
+    //------------
+    HashSet<int> answers = new HashSet<int>() { 3, 5, 8, 5 }; //重複分は無視される
+    answers.Add(10); // 3, 5, 8, 10
+    answers.Remove(3); // 5, 8, 10
+    Console.WriteLine(answers.Contains(3)); // false
+    foreach (var answer in answers) {
+      Console.WriteLine(answer);
+    }
+
+    //------------
+    // Dictionary  
+    //------------
+    Dictionary<string, int> registrants = new Dictionary<string, int>() {
+      {"taguchi", 50},
+      {"fkoji", 80},
+    };
+    registrants.Add("dotinstall", 40);
+    Console.WriteLine(registrants["fkoji"]); // 80
+    registrants["taguchi"] = 60;
+    foreach (KeyValuePair<string, int> registrant in registrants) {
+      Console.WriteLine($"{registrant.Key}: {registrant.Value}");
+    }
 
   }
 }
