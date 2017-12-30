@@ -199,7 +199,6 @@ class MyExceptionPractice{
   }
 }
 
-
 /////////////////////////////////////
 //           
 /////////////////////////////////////
@@ -217,6 +216,21 @@ class MyApp {
     Console.WriteLine($"hi! {name} ({age})");
   }
 
+  //==============================
+  //          デリゲート
+  //==============================
+  //デリゲートがある事で、メソッドを変数として扱える。
+  delegate void MyDelegate();
+  static void SayHiFromDeligater() => Console.WriteLine("hi!(From Delegate)"); //デリゲート登録するメソッド
+  static void SayHelloFromDeligater() => Console.WriteLine("hello!(From Delegate)");
+  //↑と同義
+  // static void SayHelloFromDeligater() {
+  //   Console.WriteLine("hi!");
+  // }
+
+  ////////////////////
+  //           
+  ////////////////////
   static void Main() {
 
     //変数
@@ -529,7 +543,16 @@ class MyApp {
     MyExceptionPractice.Div(10, 0);
     MyExceptionPractice.Div(10, -3);
 
+    //==============================
+    //          デリゲート
+    //==============================
+    MyDelegate ShowMessage;
+
+    ShowMessage = SayHiFromDeligater; // デリゲートにメソッドを登録
+    ShowMessage += SayHelloFromDeligater; //メソッドを追加（マルチキャストデリゲート）
+    ShowMessage -= SayHelloFromDeligater; //登録の解除
+
+    ShowMessage(); // 実行
+
   }
-
-
 }
