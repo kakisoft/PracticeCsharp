@@ -199,6 +199,20 @@ class MyExceptionPractice{
   }
 }
 
+//==============================
+//          イベント
+//==============================
+delegate void MyEventHandler();
+class MyButton {
+  public event MyEventHandler MyEvent;　// eventを付けると、MyEventは、 このクラス(MyButton)からのみ実行可能という制限をつけることができます。
+  public void OnClicked() {
+    if (MyEvent != null) {
+      MyEvent();
+    }
+  }
+}
+
+
 /////////////////////////////////////
 //           
 /////////////////////////////////////
@@ -575,5 +589,14 @@ class MyApp {
     ShowMessage3 += () => Console.WriteLine("hello!(Lambda expression)");
 
     ShowMessage3();
+
+    //==============================
+    //         イベント
+    //==============================
+    MyButton btn = new MyButton();
+    // メソッドを登録できる（以下ではラムダ式を使用している）
+    btn.MyEvent += () => Console.WriteLine("Button Clicked!"); 
+    btn.OnClicked();
+
   }
 }
