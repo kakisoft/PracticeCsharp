@@ -34,6 +34,19 @@ GroupBox → Grid の上に配置
               Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
 '''
 
+## 文字の中央揃え
+
+並べ替え：「カテゴリ」
+では表示されない？（「名前」or「ソース」なら表示される。）
+
+```xml
+<TextBox x:Name="TerminalNo" HorizontalAlignment="Left" Height="35" Margin="161,513,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Text="（端末番号）" FontSize="14" VerticalContentAlignment="Center"/>
+```
+ソースから変更
+```cs
+TerminalNo.VerticalContentAlignment = VerticalAlignment.Bottom;
+```
+
 ##### （疑問点）
 ```
 ・ツールボックス：ToggleButtonが表示されない？
