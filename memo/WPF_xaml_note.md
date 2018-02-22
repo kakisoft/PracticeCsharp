@@ -46,6 +46,8 @@ GroupBox → Grid の上に配置
 ```cs
 TerminalNo.VerticalContentAlignment = VerticalAlignment.Bottom;
 ```
+※VerticalAlignmentではない  
+
 
 ##### （疑問点）
 ```
