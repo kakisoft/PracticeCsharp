@@ -27,4 +27,16 @@ GroupBox → Grid の上に配置
 </GroupBox>
 ```
 
+## トグルボタン
+ツールボックスに表示されない？
+'''xml
+<ToggleButton x:Name="ToggleButtonName1" Content="ToggleButton" HorizontalAlignment="Left"
+              Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
+'''
+
+##### x
+```
+・ツールボックス：ToggleButtonの表示
+・Visibility="Hidden" にした時、デザイナからは触れない？
+```
 
