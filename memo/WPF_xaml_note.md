@@ -34,9 +34,9 @@ GroupBox → Grid の上に配置
               Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
 '''
 
-##### x
+##### （疑問点）
 ```
-・ツールボックス：ToggleButtonの表示
+・ツールボックス：ToggleButtonが表示されない？
 ・Visibility="Hidden" にした時、デザイナからは触れない？
 ```
 
