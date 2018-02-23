@@ -42,6 +42,14 @@ StackPanel に配置。  
               Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
 ```
 
+## トグル風ボタン
+```xml
+        <StackPanel x:Name="StackPanel1" HorizontalAlignment="Left" Height="41" Margin="105,190,0,0" VerticalAlignment="Top" Width="255" RenderTransformOrigin="1.87,0.5">
+            <RadioButton Style="{StaticResource {x:Type ToggleButton}}" x:Name="ToggleStyleButton1" Content="トグル風ボタン１" Height="40" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True"/>
+            <RadioButton Style="{StaticResource {x:Type ToggleButton}}" x:Name="ToggleStyleButton2" Content="トグル風ボタン２" Height="40" Width="100" Margin="70,-40,0,0"/>
+        </StackPanel>
+```
+
 ## 文字の中央揃え
 
 並べ替え：「カテゴリ」
