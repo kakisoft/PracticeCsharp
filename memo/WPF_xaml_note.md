@@ -1,5 +1,10 @@
 # WPF：xaml 
 
+##### （疑問点）
+```
+・Visibility="Hidden" にした時、デザイナからは触れない？
+```
+
 ### コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
 
@@ -83,12 +88,8 @@ Grid.ColumnSpanで連結が出来たりする。
         </Grid>
 ```
 
+### HorizontalAlignment プロパティ
+https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/alignment-margins-and-padding-overview
 
 
-
-##### （疑問点）
-```
-・ツールボックス：ToggleButtonが表示されない？
-・Visibility="Hidden" にした時、デザイナからは触れない？
-```
 
