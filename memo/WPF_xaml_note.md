@@ -51,6 +51,40 @@ TerminalNo.VerticalContentAlignment = VerticalAlignment.Bottom;
 ```
 ※VerticalAlignmentではない  
 
+### Grid
+htmlのtableみたいな感覚？  
+Grid.ColumnSpanで連結が出来たりする。  
+```
+        <Grid Grid.ColumnSpan="4" Margin="10,10,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Content="btn1-1" Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+            <Button Content="btn1-2" Grid.Row="1" Grid.Column="2" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+            <Button Content="btn1-3" Grid.Row="1" Grid.Column="3" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+            <Button Content="btn1-4" Grid.Row="1" Grid.Column="4" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+
+            <Button Content="btn2-1" Grid.Row="2" Grid.Column="1" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+            <Button Content="btn2-2" Grid.Row="2" Grid.Column="2" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+            <Button Content="btn2-3" Grid.Row="2" Grid.Column="3" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+            <Button Content="btn2-4" Grid.Row="2" Grid.Column="4" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
+        </Grid>
+```
+
+
+
 
 ##### （疑問点）
 ```
