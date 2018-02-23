@@ -51,11 +51,11 @@ TerminalNo.VerticalContentAlignment = VerticalAlignment.Bottom;
 ```
 ※VerticalAlignmentではない  
 
-### Grid
+## Grid
 htmlのtableみたいな感覚？  
 Grid.ColumnSpanで連結が出来たりする。  
-```
-        <Grid Grid.ColumnSpan="4" Margin="10,10,10,10">
+```xml
+        <Grid Grid.ColumnSpan="4" Margin="10,10,10,10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60" />
                 <RowDefinition Height="60" />
