@@ -1,3 +1,4 @@
+<link href="https://kakisoft.github.io/MiscellaneousNotes/mysite/style_kakisoft.css" rel="stylesheet"></link>
 # WPF：xaml 
 
 ##### （疑問点）
