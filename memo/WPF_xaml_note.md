@@ -86,7 +86,7 @@ StackPanel に配置。  
 ```cs
 TerminalNo.VerticalContentAlignment = VerticalAlignment.Bottom;
 ```
-※**VerticalAlignment**ではない  
+※***VerticalAlignment***ではない  
 
 ## Grid
 htmlのtableみたいな感覚？  
