@@ -23,6 +23,14 @@ InlineUIだと、ポジションを指定した配置が出来ない。
 </Grid>
 ```
 
+## Margin
+```xml
+   左      上     右       下
+（Left）（Top）（Right）（Bottom）
+<Button Margin="-10,-40,30,10"
+<Button Margin="110,-40,30,10"  Content="当日" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="100"/>
+```xml
+
 ### ラジオボタン
 StackPanel に配置。    
 もしくは、GroupBox → Grid とか。
