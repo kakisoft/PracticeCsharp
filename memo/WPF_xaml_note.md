@@ -1,3 +1,4 @@
+https://kakisoft.github.io/PracticeCsharp/memo/WPF_xaml_note
 <link href="https://kakisoft.github.io/MiscellaneousNotes/mysite/style_kakisoft.css" rel="stylesheet">
 # WPF：xaml 
 
