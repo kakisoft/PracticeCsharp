@@ -37,10 +37,10 @@ StackPanel に配置。  
 
 ## トグルボタン
 ツールボックスに表示されない？
-'''xml
+```xml
 <ToggleButton x:Name="ToggleButtonName1" Content="ToggleButton" HorizontalAlignment="Left"
               Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
-'''
+```
 
 ## 文字の中央揃え
 
