@@ -8,6 +8,22 @@
 ### コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
 
+
+### StackPanel：縦 or 横に並べる（デフォルトは縦）
+Orientation="Horizontal" or "Virtual"    
+FlowDirection="RightToLeft"  or  "LeftToRight"        
+　    
+　    
+## WrapPanel：横に並べて、自動で折り返す
+方向は指定可能。    
+　    
+　    
+## DockPanel：横に並べて、折り返さない
+横に並べ続けると、見えなくなる事も。    
+複雑なレイアウトが作れる。    
+http://ufcpp.net/study/dotnet/wpf_container.html
+　    
+　    
 ### 固定配置とフロート配置
 InlineUIだと、ポジションを指定した配置が出来ない。
 
