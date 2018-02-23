@@ -87,7 +87,12 @@ Grid.ColumnSpanで連結が出来たりする。
             <Button Content="btn2-4" Grid.Row="2" Grid.Column="4" Grid.RowSpan="1" FontSize="12" Width="50" Height="20" Background="#FF2BE2C1"/>
         </Grid>
 ```
-
+```xml
+        <StackPanel HorizontalAlignment="Left" Height="41" Margin="105,190,0,0" VerticalAlignment="Top" Width="255" RenderTransformOrigin="1.87,0.5">
+            <Button Content="当日" Height="40" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Content="当日" Height="40" Width="100" Margin="70,-40,0,0"/>
+        </StackPanel>
+```
 ### HorizontalAlignment プロパティ
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/alignment-margins-and-padding-overview
 
