@@ -24,8 +24,8 @@ InlineUIだと、ポジションを指定した配置が出来ない。
 ```
 
 ### ラジオボタン
-GroupBox → Grid の上に配置
-
+StackPanel に配置。  
+もしくは、GroupBox → Grid とか。
 ```xml
 <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="64" Margin="10,342,0,0" VerticalAlignment="Top" Width="308">
     <Grid HorizontalAlignment="Left" Height="29" Margin="20,5,0,0" VerticalAlignment="Top" Width="243">
