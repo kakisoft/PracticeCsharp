@@ -5,11 +5,11 @@
 ・Visibility="Hidden" にした時、デザイナからは触れない？
 ```
 
-### コントロールのコピーペースト
+## コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
 
 
-### StackPanel：縦 or 横に並べる（デフォルトは縦）
+## StackPanel：縦 or 横に並べる（デフォルトは縦）
 Orientation="Horizontal" or "Virtual"    
 FlowDirection="RightToLeft"  or  "LeftToRight"        
 　    
@@ -24,7 +24,7 @@ FlowDirection="RightToLeft"  or  "LeftToRight"
 http://ufcpp.net/study/dotnet/wpf_container.html
 　    
 　    
-### 固定配置とフロート配置
+## 固定配置とフロート配置
 InlineUIだと、ポジションを指定した配置が出来ない。
 
 ```xml
@@ -47,7 +47,7 @@ InlineUIだと、ポジションを指定した配置が出来ない。
 <Button Margin="110,-40,30,10"  Content="当日" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="100"/>
 ```
 
-### ラジオボタン
+## ラジオボタン
 StackPanel に配置。    
 もしくは、GroupBox → Grid とか。
 ```xml
@@ -125,7 +125,7 @@ Grid.ColumnSpanで連結が出来たりする。
             <Button Content="当日" Height="40" Width="100" Margin="70,-40,0,0"/>
         </StackPanel>
 ```
-### HorizontalAlignment プロパティ
+## HorizontalAlignment プロパティ
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/alignment-margins-and-padding-overview
 
 
