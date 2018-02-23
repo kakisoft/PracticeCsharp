@@ -1,10 +1,8 @@
-<link href="https://kakisoft.github.io/MiscellaneousNotes/mysite/style_kakisoft.css" rel="stylesheet"></link>
+<link href="https://kakisoft.github.io/MiscellaneousNotes/mysite/style_kakisoft.css" rel="stylesheet">
 # WPF：xaml 
 
 ##### （疑問点）
-```
-・Visibility="Hidden" にした時、デザイナからは触れない？
-```
+ * Visibility="Hidden" にした時、デザイナからは触れない？
 
 ## コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
