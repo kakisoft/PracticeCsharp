@@ -8,6 +8,9 @@ https://kakisoft.github.io/PracticeCsharp/memo/WPF_xaml_note
 ## コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
 
+## Panel系メモ
+枠線（Border）を設定することはできなさそう。    
+Borderコントロール上に配置する方法もあったけど、GroupBox上に載せる方が良さげ。    
 
 ## StackPanel：縦 or 横に並べる（デフォルトは縦）
 Orientation="Horizontal" or "Virtual"    
