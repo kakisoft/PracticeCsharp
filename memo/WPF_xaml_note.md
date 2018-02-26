@@ -23,6 +23,7 @@ FlowDirection="RightToLeft"  or  "LeftToRight"
 複雑なレイアウトが作れる。    
 http://ufcpp.net/study/dotnet/wpf_container.html
     
+配置例    
 ```xml
 <DockPanel
   Width="200" Height="200"
