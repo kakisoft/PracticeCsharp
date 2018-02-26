@@ -8,6 +8,12 @@ https://kakisoft.github.io/PracticeCsharp/memo/WPF_xaml_note
 ## コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
 
+## ユーザコントロール：UserControl
+コントロールの組み合わせを使い回す。    
+http://yujiro15.net/YKSoftware/tips_UserControl.html
+    
+https://garafu.blogspot.jp/2016/01/wpf-dependencyproperty.html
+
 ## Panel系メモ
 枠線（Border）を設定することはできなさそう。    
 Borderコントロール上に配置する方法もあったけど、GroupBox上に載せる方が良さげ。    
