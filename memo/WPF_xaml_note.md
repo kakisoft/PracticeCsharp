@@ -52,7 +52,7 @@ http://ufcpp.net/study/dotnet/wpf_container.html
   Background="LightGray"
   >
 
-  <TextBox Text="1" Background="#ffffcc" DockPanel.Dock="Top"/>
+  <TextBox Text="1" Background="#ffffcc" DockPanel.Dock="Top"    />
   <TextBox Text="2" Background="#ffccff" DockPanel.Dock="Left"    />
   <TextBox Text="3" Background="#ccffff" DockPanel.Dock="Right"    />
   <TextBox Text="4" Background="#ffcccc" DockPanel.Dock="Bottom"    />
