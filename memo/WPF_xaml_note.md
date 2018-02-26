@@ -53,11 +53,11 @@ http://ufcpp.net/study/dotnet/wpf_container.html
   >
 
   <TextBox Text="1" Background="#ffffcc" DockPanel.Dock="Top"/>
-  <TextBox Text="2" Background="#ffccff" DockPanel.Dock="Left"/>
-  <TextBox Text="3" Background="#ccffff" DockPanel.Dock="Right"/>
-  <TextBox Text="4" Background="#ffcccc" DockPanel.Dock="Bottom"/>
-  <TextBox Text="5" Background="#ccffcc" DockPanel.Dock="Left"/>
-  <TextBox Text="6" Background="#ccccff" DockPanel.Dock="Right"/>
+  <TextBox Text="2" Background="#ffccff" DockPanel.Dock="Left"    />
+  <TextBox Text="3" Background="#ccffff" DockPanel.Dock="Right"    />
+  <TextBox Text="4" Background="#ffcccc" DockPanel.Dock="Bottom"    />
+  <TextBox Text="5" Background="#ccffcc" DockPanel.Dock="Left"    />
+  <TextBox Text="6" Background="#ccccff" DockPanel.Dock="Right"    />
 
 </DockPanel>
 ```
