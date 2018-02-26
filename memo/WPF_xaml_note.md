@@ -14,6 +14,12 @@ http://yujiro15.net/YKSoftware/tips_UserControl.html
     
 https://garafu.blogspot.jp/2016/01/wpf-dependencyproperty.html
 
+## ControlTemplate：カスタムテンプレート
+コントロールの外観を変える。    
+https://msdn.microsoft.com/ja-jp/library/system.windows.controls.controltemplate(v=vs.110).aspx
+    
+https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/controls/customizing-the-appearance-of-an-existing-control
+    
 ## Panel系メモ
 枠線（Border）を設定することはできなさそう。    
 Borderコントロール上に配置する方法もあったけど、GroupBox上に載せる方が良さげ。    
