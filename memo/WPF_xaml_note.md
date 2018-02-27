@@ -5,6 +5,9 @@ https://kakisoft.github.io/PracticeCsharp/memo/WPF_xaml_note
 ##### （疑問点）
  * Visibility="Hidden" にした時、デザイナからは触れない？
 
+## WPF4.5入門
+http://blog.okazuki.jp/entry/2014/12/27/200015
+
 ## コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
 
@@ -33,12 +36,10 @@ Borderコントロール上に配置する方法もあったけど、GroupBox上
 
 ## StackPanel：縦 or 横に並べる（デフォルトは縦）
 Orientation="Horizontal" or "Virtual"    
-FlowDirection="RightToLeft"  or  "LeftToRight"        
-　    
+FlowDirection="RightToLeft"  or  "LeftToRight"    
 　    
 ## WrapPanel：横に並べて、自動で折り返す
 方向は指定可能。    
-　    
 　    
 ## DockPanel：横に並べて、折り返さない
 横に並べ続けると、見えなくなる事も。    
