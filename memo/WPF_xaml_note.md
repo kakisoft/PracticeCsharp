@@ -169,8 +169,9 @@ Grid.ColumnSpanで連結が出来たりする。
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/alignment-margins-and-padding-overview
 
 ## リキッド レイアウト (liquid layout) 
-表示領域のサイズによって動的に表示方法が最適化されるようなレイアウト。
-
+表示領域のサイズによって動的に表示方法が最適化されるようなレイアウト。    
+https://sakapon.wordpress.com/2015/03/27/xaml-layout/
+    
 #### (1) Grid
 Grid では、ColumnDefinitions プロパティおよび RowDefinitions プロパティにより、各行・列の幅を指定できます。 
 固定値のほか、他の行・列との相対値 (1:2 にする場合など) や内部のコンテンツの幅 (Auto) も指定できます。
