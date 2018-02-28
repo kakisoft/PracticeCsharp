@@ -18,7 +18,7 @@ Width、Heightプロパティに固定値を入れた場合、外側のウィン
     
 Width、HeightプロパティにAutoを入れた場合は、  
 外側のウィンドウの大きさに応じてコントロールの大きさが変わる。      
-※HorizontalAlignmentとVerticalAlignmentを消す。（Stretchに設定）      
+**※HorizontalAlignmentとVerticalAlignmentを消す。（Stretchに設定）**      
 
 ### rameworkElement.Width プロパティ
 デバイスに依存しない単位 (1 単位は 1/96 インチ)     
