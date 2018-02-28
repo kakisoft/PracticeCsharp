@@ -1,7 +1,10 @@
 ## C# リファレンス
 https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/index
 
-## 検索
+## 検索１
+https://msdn.microsoft.com/ja-jp/library/mt472912(v=vs.110).aspx
+
+## 検索２
 https://docs.microsoft.com/ja-jp/dotnet/api/
 
 ________________________________________________
