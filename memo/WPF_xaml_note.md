@@ -24,23 +24,6 @@ Width、HeightプロパティにAutoを入れた場合は、
 デバイスに依存しない単位 (1 単位は 1/96 インチ)     
 ※絶対的な値
 
-## 比率を指定して配置
-コントロールの幅や高さを画面サイズのパーセントで指定するには？    
-http://www.atmarkit.co.jp/ait/articles/1505/20/news026.html
-```
-<Grid ……省略……>
-  <Grid.ColumnDefinitions>
-    <ColumnDefinition Width="0.6*"/>
-    <ColumnDefinition Width="0.4*"/>
-  </Grid.ColumnDefinitions>
-  <Image Source="Assets/hayashi_09.JPG" Stretch="UniformToFill" />
-  <TextBlock Grid.Column="1" TextWrapping="Wrap" FontSize="30">
-    ……省略（長い文字列）……
-  </TextBlock>
-</Grid>
-```
-
-
 ### ディスプレイの解像度
 1280×1024    
 （横に1280、縦に1024の画素のピクセル）
@@ -219,6 +202,24 @@ Grid.ColumnSpanで連結が出来たりする。
             <Button Content="当日" Height="40" Width="100" Margin="70,-40,0,0"/>
         </StackPanel>
 ```
+
+## Grid：比率を指定して配置
+コントロールの幅や高さを画面サイズのパーセントで指定するには？    
+http://www.atmarkit.co.jp/ait/articles/1505/20/news026.html
+```
+<Grid ……省略……>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="0.6*"/>
+    <ColumnDefinition Width="0.4*"/>
+  </Grid.ColumnDefinitions>
+  <Image Source="Assets/hayashi_09.JPG" Stretch="UniformToFill" />
+  <TextBlock Grid.Column="1" TextWrapping="Wrap" FontSize="30">
+    ……省略（長い文字列）……
+  </TextBlock>
+</Grid>
+```
+フレキシブルに対応するには、この方法が良さそう。    
+
 ## HorizontalAlignment プロパティ
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/alignment-margins-and-padding-overview
 
