@@ -8,9 +8,9 @@ https://kakisoft.github.io/PracticeCsharp/memo/WPF_xaml_note
 ## WPF4.5入門
 http://blog.okazuki.jp/entry/2014/12/27/200015
 
-#### Window
+### Window
 
-#### UserControl
+### UserControl
 
 ## コントロールのコピーペースト
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
