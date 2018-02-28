@@ -16,7 +16,20 @@ http://blog.okazuki.jp/entry/2014/12/27/200015
 全く同じポジションにペーストされるため、一見、動作していないように見えてしまう。
 
 ## ウィンドウの追加（既存のファイルから）
+```
 ソリューションエクスプローラにて右クリック→追加→既存の項目
+```
+xamlと、それに紐付くcsを追加した場合、Visual Studioのソリューションエクスプローラではツリー構造にならない事がある。
+.csproj を直接編集して対処。
+```
+    <Compile Include="AddedWindow.xaml.cs">
+      <DependentUpon>AddedWindow.xaml</DependentUpon>
+    </Compile>
+```
+AddedWindow.xaml    
+AddedWindow.xaml.cs    
+の組み合わせ。    
+
 
 ## ユーザコントロール：UserControl
 コントロールの組み合わせを使い回す。    
