@@ -13,8 +13,11 @@ http://blog.okazuki.jp/entry/2014/12/27/200015
 ### UserControl
 
 ## 大きさの調整
-Width、Heightプロパティに固定値を入れた場合、外側のウィンドウの大きさを変更しても、コントロールの大きさ(幅または高さ)は変わらない。    
-Width、HeightプロパティにAutoを入れた場合は、外側のウィンドウの大きさに応じてコントロールの大きさが変わる。      
+Width、Heightプロパティに固定値を入れた場合、外側のウィンドウの大きさを変更しても、    
+コントロールの大きさ(幅または高さ)は変わらない。    
+    
+Width、HeightプロパティにAutoを入れた場合は、  
+外側のウィンドウの大きさに応じてコントロールの大きさが変わる。      
 ※HorizontalAlignmentとVerticalAlignmentを消す。（Stretchに設定）      
 
 ### rameworkElement.Width プロパティ
