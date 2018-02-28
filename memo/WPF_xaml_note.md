@@ -26,8 +26,8 @@ xamlと、それに紐付くcsを追加した場合、Visual Studioのソリュ�
       <DependentUpon>AddedWindow.xaml</DependentUpon>
     </Compile>
 ```
-AddedWindow.xaml    
-AddedWindow.xaml.cs    
+ * AddedWindow.xaml
+ * AddedWindow.xaml.cs
 の組み合わせ。    
 
 
