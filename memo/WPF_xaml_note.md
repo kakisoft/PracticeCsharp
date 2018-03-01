@@ -73,15 +73,19 @@ https://msdn.microsoft.com/ja-jp/library/system.windows.controls.controltemplate
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/controls/customizing-the-appearance-of-an-existing-control
 
 ## Gridコントロール
-といった、配置に絡んだもの。
+Panelのような、配置に絡んだもの。    
+htmlのtableタグに近い感覚。    
 
 ## DataGridコントロール
 グリッド。    
 ヘッダの名称は、Column→Header
 
-## Panel系メモ
-枠線（Border）を設定することはできなさそう。    
-Borderコントロール上に配置する方法もあったけど、GroupBox上に載せる方が良さげ。    
+## 枠線
+BorderBrush で枠の色を設定、BorderThickness で枠の太さを設定    
+（Label、TextBoxなど）    
+
+PanelやGridの場合、Borderコントロールを配置。    
+でも、GroupBox上に載せる方が良さげ。    
 
 ## StackPanel：縦 or 横に並べる（デフォルトは縦）
 Orientation="Horizontal" or "Virtual"    
