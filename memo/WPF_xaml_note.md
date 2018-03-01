@@ -137,6 +137,10 @@ http://ufcpp.net/study/dotnet/wpf_container.html
 </DockPanel>
 ```
 
+## ★配置に関する個人的見解★
+伸縮するエリア（テキストエリアやグリッド）を内包する場合、Panel系よりもGridがいい。    
+というか、基本 Gridがいい。    
+DockPanelみたく、小さくしてもコントロールが崩れずにする時くらい？    
 　    
 ## 固定配置とフロート配置
 InlineUIだと、ポジションを指定した配置が出来ない。
