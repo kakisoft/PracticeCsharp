@@ -85,7 +85,17 @@ BorderBrush で枠の色を設定、BorderThickness で枠の太さを設定
 （Label、TextBoxなど）    
 
 PanelやGridの場合、Borderコントロールを配置。    
-でも、GroupBox上に載せる方が良さげ。    
+といっても、Borderコントロールの内部にコントロールを定義するわけでなく、ヘッダあたりにでも定義しておけばOK。
+```xml
+（例）
+</Grid.ColumnDefinitions>
+
+<Border Grid.ColumnSpan="3"  BorderBrush="Black" BorderThickness="1.5" />
+
+<Button   Grid.Row="0" Grid.Column="0" Margin="5,0" Content="0-0" />
+<Button   Grid.Row="0" Grid.Column="1" Margin="5,0" Content="0-1" />
+```
+他に、GroupBox上に載せる方法でも良さげ。    
 
 ## StackPanel：縦 or 横に並べる（デフォルトは縦）
 Orientation="Horizontal" or "Virtual"    
