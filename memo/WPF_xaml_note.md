@@ -8,9 +8,21 @@ https://kakisoft.github.io/PracticeCsharp/memo/WPF_xaml_note
 ## WPF4.5入門
 http://blog.okazuki.jp/entry/2014/12/27/200015
 
-### Window
+## WPF Window
+独立して表示可能な存在、PageやUserControlのホストになる存在。    
 
-### UserControl
+## WPF Page
+ホスト下で表示し、「進む」「戻る」などのナビゲーションアプリケーションでの使用を前提とした使い方。    
+ホストで使用するにはフレームコントロールを経由して使います。    
+http://gushwell.ldblog.jp/archives/52335648.html
+    
+
+## WPF UserControl
+自作コントロール。単体では独立して動作せず、Window内に設置する必要がある。    
+自作後、ビルドしないとコントロールを設置出来ない。    
+通常コントロールと使用方法は同じ。    
+コントロールに固有名詞を設定すれば、メインウィンドウからメソッドの呼び出しも可。    
+    
 
 ## 大きさの調整
 Width、Heightプロパティに固定値を入れた場合、外側のウィンドウの大きさを変更しても、    
