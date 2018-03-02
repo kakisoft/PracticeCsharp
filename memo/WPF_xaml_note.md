@@ -23,6 +23,17 @@ http://gushwell.ldblog.jp/archives/52335648.html
 通常コントロールと使用方法は同じ。    
 コントロールに固有名詞を設定すれば、メインウィンドウからメソッドの呼び出しも可。    
     
+## タグの閉じ方
+
+#### 開始タグと同名で閉じる
+```
+        <Button x:Name="Close1" Margin="5" Content="Btn" Height="50" FontSize="20">
+        </Button>
+```
+#### 末尾を「  />  」 で閉じる
+```
+        <Button x:Name="Close2" Margin="5" Content="Btn" Height="50" FontSize="20" />
+```
 
 ## 大きさの調整
 Width、Heightプロパティに固定値を入れた場合、外側のウィンドウの大きさを変更しても、    
