@@ -113,7 +113,7 @@ Items→(コレクション)→ListBoxItemなどを選択→追加
 BorderBrush で枠の色を設定、BorderThickness で枠の太さを設定    
 （Label、TextBoxなど）    
 
-PanelやGridの場合、Borderコントロールを配置。    
+PanelやGridの場合、Borderコントロールを配置。      
 といっても、Borderコントロールの内部にコントロールを定義するわけでなく、ヘッダあたりにでも定義しておけばOK。
 ```xml
 （例）
