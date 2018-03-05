@@ -95,7 +95,7 @@ https://msdn.microsoft.com/ja-jp/library/system.windows.controls.controltemplate
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/controls/customizing-the-appearance-of-an-existing-control
 
 ## Gridコントロール
-Panelのような、配置に絡んだもの。    
+Panelのような、配置に絡んだもの。    
 htmlのtableタグに近い感覚。    
 
 ## DataGridコントロール
