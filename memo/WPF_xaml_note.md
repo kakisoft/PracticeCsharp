@@ -307,3 +307,17 @@ Viewbox のような伸縮させるコントロールでは、既定では無制
 『WPFの「リソース、スタイル、テンプレート」を習得しよう。』    
 http://www.atmarkit.co.jp/ait/articles/1009/07/news096.html
 
+## ListBoxとListView
+```
+ListBox
+┗ListView
+```
+正直、調べても違いがよう分からん。   
+以下、自分の印象。
+### ListBox
+複数選択できるコンボボックス
+
+
+### ListView
+Androidのwidgetみたいなもん？    
+ListBoxよりも簡素化されて、機能も絞られているみたいな感じ？    
