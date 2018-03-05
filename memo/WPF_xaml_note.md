@@ -70,7 +70,7 @@ Width、HeightプロパティにAutoを入れた場合は、
 ソリューションエクスプローラにて右クリック→追加→既存の項目
 ```
 xamlと、それに紐付くcsを追加した場合、Visual Studioのソリューションエクスプローラではツリー構造にならない事がある。    
-.csproj を直接編集して対処。
+<プロジェクト名>.csproj を直接編集して対処。
 ```
     <Compile Include="AddedWindow.xaml.cs">
       <DependentUpon>AddedWindow.xaml</DependentUpon>
