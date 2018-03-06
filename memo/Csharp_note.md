@@ -3,7 +3,7 @@ https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/classes-and-str
     
 クラス、インターフェイス、メソッドの定義を、複数のソースに分割できる。    
 （コンパイル時に結合）
-```
+```cs
 public partial class Employee
 {
     public void DoWork()
