@@ -5,8 +5,8 @@ https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/async
 
 
 ## Async および Await を使用した非同期プログラミング 
-https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/async/index
-    （サンプルソース付き）
+https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/async/index    
+（サンプルソース付き）
 
 ## partial（部分クラスと部分メソッド）
 https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
