@@ -327,3 +327,21 @@ ListBox
 ### ListView
 Androidのwidgetみたいなもん？    
 ListBoxよりも簡素化されて、機能も絞られているみたいな感じ？    
+
+## Manipulation系のプロパティ
+http://www.atmarkit.co.jp/ait/articles/1103/01/news124.html
+ * ManipulationStarted： 
+     * ユーザーがタッチ操作を開始したときに発生する。
+ * ManipulationStarting： 
+     * タッチ操作可能なUI要素（＝IsManipulationEnabledプロパティの値が「true」）に対してユーザーがタッチ操作を開始したときに発生する。
+　　       ⇒IsEnabledがTrueの時のみ発生する、という解釈でＯＫなのか？
+ * ManipulationInertiaStarting： 
+     * ユーザーが慣性操作（＝勢いよく指を動かしたときに、しばらく慣性的にManipulationDeltaイベントが起きる）を開始したときに発生する。
+ * ManipulationDelta：
+     * ユーザーが指を動かしてタッチ操作に変化が生じたときに発生する。
+ * ManipulationCompleted： 
+     * ユーザーがタッチ操作を終えたときに発生する。
+ * ManipulationBoundaryFeedback： 
+      * 操作対象のUI要素がタッチ操作可能な範囲の境界に到達したときに発生する。
+
+
