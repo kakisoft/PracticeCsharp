@@ -334,7 +334,7 @@ http://www.atmarkit.co.jp/ait/articles/1103/01/news124.html
      * ユーザーがタッチ操作を開始したときに発生する。
  * ManipulationStarting： 
      * タッチ操作可能なUI要素（＝IsManipulationEnabledプロパティの値が「true」）に対してユーザーがタッチ操作を開始したときに発生する。<br>
-       　⇒a
+       　⇒IsEnabledがTrueの時のみ発生する、という解釈でＯＫなのか？
  * ManipulationInertiaStarting： 
      * ユーザーが慣性操作（＝勢いよく指を動かしたときに、しばらく慣性的にManipulationDeltaイベントが起きる）を開始したときに発生する。
  * ManipulationDelta：
