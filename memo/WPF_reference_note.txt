@@ -1,3 +1,10 @@
+System.Object
+  System.Windows.Threading.DispatcherObject
+    System.Windows.DependencyObject
+      System.Windows.Media.Visual
+        System.Windows.UIElement
+          System.Windows.FrameworkElement
+__________________________________________________________________________________
 ## DataContext
 WPF、怒りのツリー外DataContext伝播
 https://qiita.com/ugaya40/items/58e9e3c3340cc1f61b4f
