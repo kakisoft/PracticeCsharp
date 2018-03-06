@@ -8,6 +8,9 @@ https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/async
 https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/async/index    
 （サンプルソース付き）
 
+## Task クラス
+非同期操作を表します。
+
 ## partial（部分クラスと部分メソッド）
 https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
     
