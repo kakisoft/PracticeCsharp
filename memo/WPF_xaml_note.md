@@ -344,4 +344,9 @@ http://www.atmarkit.co.jp/ait/articles/1103/01/news124.html
  * ManipulationBoundaryFeedback： 
       * 操作対象のUI要素がタッチ操作可能な範囲の境界に到達したときに発生する。
 
+## ObservableCollection 
+https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/data/how-to-create-and-bind-to-an-observablecollection
+    
+ObservableCollection<T>クラスは、項目が追加または削除されたときに通知を提供するコレクション クラスです。    
+（要バインド）
 
