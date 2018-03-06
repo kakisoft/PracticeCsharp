@@ -44,7 +44,50 @@ ________________________________________________________________________________
 チュートリアル : ASP.NET アプリケーション サービスの使用
 https://msdn.microsoft.com/ja-jp/library/bb515342(v=vs.100).aspx
 
+__________________________________________________________________________________
+## CustomDataGrid
+https://social.msdn.microsoft.com/Forums/ja-JP/e9909a42-ce31-4b1f-9443-d5fa77c76a77/datagridenter?forum=silvelightdotnetja
+自前でDataGridを継承したCustomDataGridを定義できる。
+（例）
+```
+    public class CustomDataGrid : DataGrid
+    {
 
+        public CustomDataGrid() : base()
+        {
+        }
+
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                this.MoveNextCell();
+                e.Handled = true;
+            };
+
+            base.OnKeyDown(e);
+        }
+
+        private void MoveNextCell()
+        {
+
+            DataGridColumn currentcol = this.CurrentColumn;
+            
+            // 現在のカラムが最大かどうか
+            bool isLastCol = (currentcol.DisplayIndex == this.Columns.Count - 1); 
+
+            if (!isLastCol)
+            {
+                // 編集を終了して次へ
+                this.CommitEdit();
+                this.CurrentColumn = this.Columns[currentcol.DisplayIndex + 1];
+                this.BeginEdit();
+            };
+
+        }
+
+    }
+```
 __________________________________________________________________________________
 
 
