@@ -8,6 +8,11 @@ https://kakisoft.github.io/PracticeCsharp/memo/WPF_xaml_note
 ## WPF4.5入門
 http://blog.okazuki.jp/entry/2014/12/27/200015
 
+## xamlのタグの名前のつけ方
+https://mediaforcelabs.g.hatena.ne.jp/coma2/20091007/1255880017    
+searchButton    
+searchButton_Click    
+
 ## WPF Window
 独立して表示可能な存在、PageやUserControlのホストになる存在。    
 
