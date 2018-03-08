@@ -365,3 +365,10 @@ ObservableCollection<T>クラスは、項目が追加または削除されたと
 ## TextBlock
 実はラベルっぽいくエンドユーザは編集できない。HTML仕様に改良したもの？
 が、テキストブロックの中にテキストボックスや、ボタンなどコントロールを配置できる。
+
+## CheckBox
+CheckedChanged は無い。    
+Checked イベントと Unchecked イベントを使う。    
+Checked はチェック時、Unchecked はチェックが外れた時しかイベント起きない。
+
+
