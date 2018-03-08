@@ -22,6 +22,20 @@ https://mva.microsoft.com/
 https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=Topic&f%5B0%5D.Value=WPF%20%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
 
 ________________________________________________
+## WPFの「データ・バインディング」を理解する 
+http://www.atmarkit.co.jp/ait/articles/1010/08/news123.html
+```
+{Binding X}
+{Binding Path=X}
+```
+バインディングには２種類ある？
+
+ * thisに設置して、共有リソースのように使う
+ * DataGridに流し込むデータ（ItemsSource="{Binding}"）
+
+## WPFサンプル:単一データのバインディング
+http://gushwell.ldblog.jp/archives/52288631.html
+________________________________________________
 
 ## [C#]ActiveDirectory（LDAP）を使って認証
 https://anopara.net/2014/05/19/cactivedirectory%EF%BC%88ldap%EF%BC%89%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E8%AA%8D%E8%A8%BC/
