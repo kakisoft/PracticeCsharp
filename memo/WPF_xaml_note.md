@@ -131,6 +131,13 @@ PanelやGridの場合、Borderコントロールを配置。    
 ```
 他に、GroupBox上に載せる方法でも良さげ。    
 
+## パネル系の継承関係
+System.Windows.Controls.Panel    
+┗System.Windows.Controls.StackPanel    
+┗System.Windows.Controls.DockPanel    
+┗System.Windows.Controls.WrapPanel    
+┗System.Windows.Controls.Grid    
+
 ## StackPanel：縦 or 横に並べる（デフォルトは縦）
 Orientation="Horizontal" or "Virtual"    
 FlowDirection="RightToLeft"  or  "LeftToRight"    
@@ -355,3 +362,6 @@ https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/data/how-to-create-and-bin
 ObservableCollection<T>クラスは、項目が追加または削除されたときに通知を提供するコレクション クラスです。    
 （要バインド）
 
+## TextBlock
+実はラベルっぽいくエンドユーザは編集できない。HTML仕様に改良したもの？
+が、テキストブロックの中にテキストボックスや、ボタンなどコントロールを配置できる。
