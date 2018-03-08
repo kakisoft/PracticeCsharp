@@ -31,3 +31,13 @@ public partial class Employee
     }
 }
 ```
+## throw（例外をスローする）
+例外を明示的に発生させる事。 
+例外が投げられると、正常動作部の処理は中断され、例外処理部が呼び出される。
+```cs
+throw 例外クラスのインスタンス
+
+（例）
+throw new FormatException();
+```
+http://ufcpp.net/study/csharp/oo_exception.html
