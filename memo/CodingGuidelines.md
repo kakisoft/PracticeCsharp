@@ -22,3 +22,9 @@ searchButton_Click
 ## フレームワーク デザインのガイドライン
 https://docs.microsoft.com/ja-jp/dotnet/standard/design-guidelines/index
 
+_________________________________________________________________________________
+***＜Rails＞***    
+モデルのファイル名・・・先頭は小文字で単数形（例. user.rb）    
+モデルクラス名・・・先頭は大文字で単数形（例. User）    
+テーブル名・・・先頭は小文字で複数形（例. users）    
+
