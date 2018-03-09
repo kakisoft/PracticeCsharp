@@ -1,6 +1,11 @@
 # バインディングについての自分の解釈
 
 ## １．ルート（フォームのthis）にDataContextを配置（newで生成）し、共有する
+⇒追記：別にルートじゃなくてもいい。
+```
+（例）
+stackpanel.DataContext = HogeObject;
+```
 コードにて、
 ```cs
 this.DataContext = _obj;
