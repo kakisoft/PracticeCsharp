@@ -55,12 +55,8 @@ http://www.atmarkit.co.jp/ait/articles/1010/08/news123.html
 {Binding X}
 {Binding Path=X}
 ```
-バインディングには２種類ある？
+## バインディングには２種類ある？
 
  * thisに設置して、共有リソースのように使う
  * DataGridに流し込むデータ（ItemsSource="{Binding}"）
-
-ソースからターゲットへの同期をするには、ソースとなるオブジェクトがINotifyPropertyChangedを実装してプロパティの変更通知を実装している必要があります。    
-http://blog.okazuki.jp/entry/2014/09/15/201110
-
 
