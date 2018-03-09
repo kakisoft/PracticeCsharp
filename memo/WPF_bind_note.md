@@ -31,7 +31,8 @@ Model変更→View自動更新　は出来ない事が。
 （例）
 public class Person : INotifyPropertyChanged
 ```
-####（参考サイト）
+
+***（参考サイト）***    
 http://blog.okazuki.jp/entry/2014/09/15/201110
 
 ### 正しいと思うけど、エラーが出る（名前空間が認識されないなど）
