@@ -31,6 +31,8 @@ Model変更→View自動更新　は出来ない事が。
 （例）
 public class Person : INotifyPropertyChanged
 ```
+ただし、テキストボックスなどの一部のコントロールでは、そこまでしなくてもできるみたい。    
+https://water2litter.net/gin/?p=1401
 
 ***（参考サイト）***    
 http://blog.okazuki.jp/entry/2014/09/15/201110
