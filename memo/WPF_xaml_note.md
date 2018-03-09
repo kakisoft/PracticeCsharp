@@ -216,7 +216,7 @@ StackPanel に配置。  
 
 ## トグルボタン
 ツールボックスに表示されない？      
-⇒よく調べたら RadioButtonやCheckboxのベースクラスで、Androidのwidgetとは全然違うみたい。
+⇒よく調べたら RadioButtonやCheckboxのベースクラスで、AndroidのwidgetでのToggleButtonとは全然違うみたい。
 ```xml
 <ToggleButton x:Name="ToggleButtonName1" Content="ToggleButton" HorizontalAlignment="Left"
               Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
