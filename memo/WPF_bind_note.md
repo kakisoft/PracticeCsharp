@@ -8,7 +8,7 @@ this.DataContext = _obj;
 でセット。    
     
 xaml側からは
-```
+```xml
 Text="{Binding Name}"
 ```
 といった感じで紐付け。
