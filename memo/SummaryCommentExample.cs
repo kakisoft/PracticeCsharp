@@ -1,5 +1,5 @@
 /*
-参考サイト：Doxygen様
+参考サイト：www.TakeAsh.net様
 http://www.takeash.net/wiki/?Doxygen
 
 タグ１つ１つの使い方の説明はあっても、、「で、実際にどう書くの？」となった時に、参考になるサイトがほとんどなかったので、
