@@ -7,6 +7,14 @@ using System.Linq;
   comment
 */
 
+//======< Sample01 >=====
+public class Customer
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public bool IsMarried { get; set; }
+}
+
 //==============================
 //          クラス
 //==============================
@@ -676,5 +684,37 @@ class MyApp {
       Console.WriteLine(result);
     }
 
+    //-----< Sample01 >-----
+    List<Customer> _customers = new List<Customer>();
+    _customers.Add(new Customer{ Name = "Fukuzawa", Age = 35, IsMarried = true,  });
+    _customers.Add(new Customer{ Name = "Higuchi" , Age = 28, IsMarried = true,  });
+    _customers.Add(new Customer{ Name = "Noda"    , Age = 42, IsMarried = false, });
+    _customers.Add(new Customer{ Name = "Igawa"   , Age = 21, IsMarried = false, });
+    _customers.Add(new Customer{ Name = "Sawada"  , Age = 31, IsMarried = true,  });
+    Console.WriteLine("====================");
+
+    // All
+    foreach (var customer in _customers)
+    {
+        Console.WriteLine(customer.Name);
+    }
+    Console.WriteLine("====================");
+
+    // フィルタリング１
+    foreach (var customer in _customers.Where(n => n.IsMarried))
+    {
+        Console.WriteLine(customer.Name);
+    }
+    Console.WriteLine("====================");
+
+    // フィルタリング２
+    foreach (var customer in _customers
+                                .Where(n => n.IsMarried)
+                                .Where(n => n.Age > 30)
+                                )
+    {
+        Console.WriteLine(customer.Name);
+    }
+    Console.WriteLine("====================");
   }
 }
