@@ -174,8 +174,8 @@ http://ufcpp.net/study/dotnet/wpf_container.html
 ```
 
 ## ★配置に関する個人的見解★
-拡大・縮小する事を考えるなら、Panel系よりもGridがいい。    
-伸縮するエリア（特にグリッド。テキストエリアも）を内包する場合は、絶対にGridがいい。    
+拡大・縮小する事を考えるなら、Panel系よりもGridがいい。        
+伸縮するエリア（特にグリッド。テキストエリアも）を内包する場合は、絶対にGridがいい。        
 てか、基本Grid。    
 DockPanelみたく、小さくしてもコントロールが崩れずにする時くらい？    
 　    
@@ -215,7 +215,8 @@ StackPanel に配置。  
 ```
 
 ## トグルボタン
-ツールボックスに表示されない？
+ツールボックスに表示されない？      
+⇒よく調べたら RadioButtonやCheckboxのベースクラスで、Androidのwidgetとは全然違うみたい。
 ```xml
 <ToggleButton x:Name="ToggleButtonName1" Content="ToggleButton" HorizontalAlignment="Left"
               Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
