@@ -7,34 +7,6 @@ https://msdn.microsoft.com/ja-jp/library/mt472912(v=vs.110).aspx
 ## 検索２
 https://docs.microsoft.com/ja-jp/dotnet/api/
 ________________________________________________
-## WPFの「データ・バインディング」を理解する 
-http://www.atmarkit.co.jp/ait/articles/1010/08/news123.html
-```
-{Binding X}
-{Binding Path=X}
-```
-バインディングには２種類ある？
-
- * thisに設置して、共有リソースのように使う
- * DataGridに流し込むデータ（ItemsSource="{Binding}"）
-
-## WPFサンプル:単一データのバインディング
-http://gushwell.ldblog.jp/archives/52288631.html
-
-
-### BindingのMode
-|  モード          |    説明                                              |
-|:-----------------|:-----------------------------------------------------|
-|  OneWay          |  ソースからターゲットへの一方通行の同期になります。  |
-|  TwoWay          |  ソースとターゲットの双方向の同期になります。        |
-|  OneWayToSource  |  ターゲットからソースへの一方通行の同期になります。  |
-|  OneTime         |  ソースからターゲットへ初回の一度だけ同期されます。  |
-
-ソースからターゲットへの同期をするには、ソースとなるオブジェクトがINotifyPropertyChangedを実装してプロパティの変更通知を実装している必要があります。    
-http://blog.okazuki.jp/entry/2014/09/15/201110
-
-
-________________________________________________
 
 ## [C#]ActiveDirectory（LDAP）を使って認証
 https://anopara.net/2014/05/19/cactivedirectory%EF%BC%88ldap%EF%BC%89%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E8%AA%8D%E8%A8%BC/
