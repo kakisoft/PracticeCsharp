@@ -26,7 +26,12 @@ Model変更→View自動更新　は出来ない事が。
 |  OneWayToSource  |  ターゲットからソースへの一方通行の同期になります。  |
 |  OneTime         |  ソースからターゲットへ初回の一度だけ同期されます。  |
 
-ソースからターゲットへの同期をするには、ソースとなるオブジェクトがINotifyPropertyChangedを実装してプロパティの変更通知を実装している必要があります。    
+★ソース→コントロール　への動機は、ソースとなるオブジェクトがINotifyPropertyChangedを実装（インプリメント）してプロパティの変更通知を実装している必要がある。
+```
+（例）
+public class Person : INotifyPropertyChanged
+```
+####（参考サイト）
 http://blog.okazuki.jp/entry/2014/09/15/201110
 
 ### 正しいと思うけど、エラーが出る（名前空間が認識されないなど）
