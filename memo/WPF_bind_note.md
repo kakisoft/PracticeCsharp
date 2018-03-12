@@ -39,6 +39,9 @@ public class Person : INotifyPropertyChanged
 ただし、テキストボックスなどの一部のコントロールでは、そこまでしなくてもできるみたい。    
 https://water2litter.net/gin/?p=1401
 
+・・・と思ったけど、上手く行かん。何でだ。      
+TextBlock は、双方向バインディングの設定だとか INotifyPropertyChangedの実装とかは不要で、View側に通知される？
+
 ***（参考サイト）***    
 http://blog.okazuki.jp/entry/2014/09/15/201110
 
