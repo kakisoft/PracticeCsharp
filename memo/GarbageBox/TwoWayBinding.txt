@@ -1,0 +1,12 @@
+## .NET TIPS：WPF／UWP：ラジオボタンを双方向バインディングするには？［C#／VB］
+http://www.atmarkit.co.jp/ait/articles/1602/03/news032.html
+
+読んでもさっぱり。
+サンプルソースをコピったけど動かん。
+何だ？「……省略……」って。（xaml側）
+「今回のサンプルソースはこちら」とあるが、そこでも「……省略……」。なんじゃそりゃあ！
+cs側のソースもコンパイル通らんし。
+『private SampleEnum ConvertFromConverterParameter(object parameter)』のパートが、
+「エラー  CS0246  型または名前空間の名前 'SampleEnum' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が指定されていることを確認してください)。」
+って出るんだけど、動作させるのに必要な物が、色々欠けているのでは？
+ってか、動くの？これ。
