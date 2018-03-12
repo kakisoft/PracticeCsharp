@@ -3,7 +3,7 @@ http://www.atmarkit.co.jp/ait/articles/1602/03/news032.html
 
 読んでもさっぱり。
 サンプルソースをコピったけど動かん。
-何だ？「……省略……」って。（xaml側）
+何だ？xaml側ソースの「……省略……」って。
 「今回のサンプルソースはこちら」とあるが、そこでも「……省略……」。なんじゃそりゃあ！
 cs側のソースもコンパイル通らんし。
 『private SampleEnum ConvertFromConverterParameter(object parameter)』のパートが、
