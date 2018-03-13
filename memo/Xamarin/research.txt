@@ -1,0 +1,19 @@
+Xamarin.Froms でパズルゲームを作る
+http://www.moonmile.net/blog/archives/5892
+
+
+＜Xamarin BarCode＞
+https://qiita.com/ytabuchi/items/3e14dcb5b9a11aaf14a9
+http://ytabuchi.hatenablog.com/entry/2016/03/10/212502
+http://www.c-sharpcorner.com/UploadFile/e4bad6/barcode-scanner-by-xamarin-forms/
+https://theconfuzedsourcecode.wordpress.com/2015/05/20/create-a-barcode-scanner-app-in-3-minutes-with-xamarin-forms/
+
+
+
+BHT-1600
+https://www.denso-wave.com/ja/info/detail__972.html
+
+
+＜スキャナ＞SE1-BB
+https://www.amazon.co.jp/Symcode-%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%BC-%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AB%E5%9E%8B-CCD-%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC/dp/B071WC3CMT/ref=sr_1_73_sspa?ie=UTF8&qid=1512108854&sr=8-73-spons&keywords=%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89+%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC+%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9&psc=1
+https://www.amazon.co.jp/Aibecy-%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%BC-%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC-%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97-%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%BF/dp/B077JZ1NM5/ref=sr_1_77?ie=UTF8&qid=1512108854&sr=8-77&keywords=%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89+%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC+%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9

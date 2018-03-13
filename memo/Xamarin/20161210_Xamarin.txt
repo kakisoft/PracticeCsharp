@@ -1,0 +1,83 @@
+JXAG(ジェイザグ)
+---------------------------------------
+
+mBaase
+mobile Backend as a service
+「アプリのバックエンドは自分で作らない」
+---------------------------------------
+Sakenomy
+--------------------------------------
+
+ハードに依存する部分は共通化できない
+
+Xamarin.Forms
+
+--------------------------------------
+
+Xamarin逆引きTips
+
+Recipes 
+
+--------------------------------------
+
+	
+
+□□□□□□□□□□□□□
+
+Azure Mobile Apps
+
+□□□□□□□□□□□□□
+
+
+CocosSharp
+NuGetでプロジェクト導入可。
+
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+
+https://githum.com/chomado/xamalin
+
+http://
+
+F:\Xamarin\20161210_3\dev-days-labs-master\dev-days-labs-master\HandsOnLab\Start\DevDaysSpeakers\DevDaysSpeakers.Droid\bin\Debug
+
+
+ObservableCollection
+イベント検知
+　　コレクションの追加、クリア、変更があった時にコール
+
+
+
+
+
+
+    <Button Text="Sync Speakers" Command="{Binding GetSpeakersCommand}"/>
+    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+
+コントロール　テキスト="xxx"
+
+
+
+
+
+
+            GetSpeakersCommand = new Command(  async () => await GetSpeakers(),
+                                                     () => !IsBusy
+                                             );
+                                             
+                                             
+[assembly: Dependency(typeof(AzureService))]
+他のクラスから引っ張ってくる
+
+
+
+
+
+
+プリズム
+ザマリンフォームー画面遷移を簡単に書ける
+
+
+
+
+
+	
