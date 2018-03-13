@@ -1,13 +1,13 @@
 ## Taskを極めろ！async/await完全攻略
 https://qiita.com/acple@github/items/8f63aacb13de9954c5da
 
-
+### 1000ミリ秒待機するタスクの完了を待ち、その後"Done!"を出力する、というタスク
 ```cs
-var task = Task.Run(() =>
+async Task AsyncMethod()
 {
-    MethodA();
-    MethodB();
-});
+    await Task.Delay(1000); // 1000ミリ秒待機するという仕事の完了を待ち、
+    WriteLine("Done!"); // "Done!"をコンソールに出力する
+} // という、「一つのTask」を表す。
 ```
 
  * シグネチャにasyncを付けたメソッドのことを「非同期メソッド」と呼ぶ。
@@ -18,12 +18,10 @@ var task = Task.Run(() =>
 非同期メソッドとは、複数の「タスク」の実行順序などを記述した「一つのタスク」と見なす事ができる。
 （作業手順書のようなもの）
 
-### 1000ミリ秒待機するタスクの完了を待ち、その後"Done!"を出力する、というタスク
 ```cs
-async Task AsyncMethod()
+var task = Task.Run(() =>
 {
-    await Task.Delay(1000); // 1000ミリ秒待機するという仕事の完了を待ち、
-    WriteLine("Done!"); // "Done!"をコンソールに出力する
-} // という、「一つのTask」を表す。
+    MethodA();
+    MethodB();
+});
 ```
-
