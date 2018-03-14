@@ -5,6 +5,14 @@ using System.Linq;
 
 /*
   comment
+  
+## ? 演算子（三項条件演算子）
+//condition が trueなら first_expressionが、falseなら second_expressionが返る。
+condition ? first_expression : second_expression;  
+
+## ?? 演算子（null 合体演算子）
+//nullの場合、右側の値を返す
+ int y = x ?? -1;
 */
 
 //======< Sample01 >=====
