@@ -1,3 +1,6 @@
+## チュートリアル
+https://docs.microsoft.com/ja-jp/dotnet/framework/wcf/getting-started-tutorial
+
 ## WCF(Windows Communication Foundation)
 .NET Framework 3.0～　の通信サブシステム。    
 アプリケーション同士をネットワーク経由で接続する仕組み。
