@@ -1,5 +1,9 @@
 ## チュートリアル
-https://docs.microsoft.com/ja-jp/dotnet/framework/wcf/getting-started-tutorial
+https://docs.microsoft.com/ja-jp/dotnet/framework/wcf/getting-started-tutorial    
+https://docs.microsoft.com/ja-jp/dotnet/framework/wcf/basic-wcf-programming    
+
+## WCF クライアントの概要
+https://docs.microsoft.com/ja-jp/dotnet/framework/wcf/wcf-client-overview    
 
 ## WCF(Windows Communication Foundation)
 .NET Framework 3.0～　の通信サブシステム。    
