@@ -1,3 +1,23 @@
+```cs
+// 20180621 → "２０１８年６月１日 (金)"
+int date1 = 20180601;
+string date2 = date1.ToString();
+string date3 = date2.Substring(0, 4) + "/" + date2.Substring(4, 2) + "/" + date2.Substring(6, 2);
+DateTime date4 = DateTime.Parse(date3);
+string date5 = date4.ToString("yyyy年M月d日 (ddd)");
+string date6 = Regex.Replace(date5, "[0-9]", p => ((char)(p.Value[0] - '0' + '０')).ToString());
+Console.WriteLine(date6);
+
+// 930 → "９：３０"
+int time1 = 930;
+string time2 = time1.ToString().PadLeft(4, '0');
+string time3 = time2.Substring(0, 2) + ":" + time2.Substring(2, 2);
+DateTime time4 = DateTime.Parse(DateTime.Now.ToString("yyyy/MM/dd " + time3));
+string time5 = time4.ToString("H：m");
+string time6 = Regex.Replace(time5, "[0-9]", p => ((char)(p.Value[0] - '0' + '０')).ToString());
+```
+
+
 |  記号  |      意味          |  表示例(ja-JP) |  表示例(en-US) |
 |:-------|:-------------------|:---------------|:---------------|
 |  yy    |  年2桁             |  15            |  15            |
