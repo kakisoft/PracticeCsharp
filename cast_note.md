@@ -19,7 +19,7 @@ int x = 256;
 string  s = x.ToString();
 ```
 
-## WPF
+## note
 ```cs
   int ticketOfNumber;
   if (int.TryParse(numberOfTicketsCluster.DispText, out ticketOfNumber) == false)
