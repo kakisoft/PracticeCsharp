@@ -18,3 +18,19 @@ bool b = bool.Parse("True");
 int x = 256;
 string  s = x.ToString();
 ```
+
+## WPF
+```cs
+  int ticketOfNumber;
+  if (int.TryParse(numberOfTicketsCluster.DispText, out ticketOfNumber) == false)
+  {
+      numberOfTicketsCluster.DispText = "0";
+      return;
+  }
+
+  ticketOfNumber += addNumber;
+  if (ticketOfNumber < 0)
+  {
+      ticketOfNumber = 0;
+  }
+```
