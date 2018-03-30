@@ -30,6 +30,13 @@ style.Setters.Add(new Setter(TextBox.WidthProperty, 180.0));
 style.Setters.Add(new Setter(TextBox.HeightProperty, 30.0));
 style.Setters.Add(new Setter(TextBox.BackgroundProperty, new SolidColorBrush(Colors.Yellow)));
 style.Setters.Add(new Setter(TextBox.ForegroundProperty, new SolidColorBrush(Colors.Blue)));
+
+
+（例）
+// 回転ハンドル用テンプレート作成
+FrameworkElementFactory fefEllpse = new FrameworkElementFactory();
+fefEllpse.Type = typeof( System.Windows.Shapes.Ellipse );
+fefEllpse.SetValue( FrameworkElement.WidthProperty, DOB_10 );
 ```
 
 
