@@ -1,0 +1,9 @@
+            //------------
+            //   Method2
+            //------------
+            List<string> strlist = new List<string>() { "a", "b", "c" };
+            var result1 = strlist.Where(n => n == "c");
+
+            var result2 = strlist
+                              .Where(n => n == "c")
+                              .Select(n => "'" + n + "'");
