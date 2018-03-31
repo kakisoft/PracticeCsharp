@@ -1,5 +1,20 @@
+## async
+非同期であることを指定します。     
+の修飾子が使用されているメソッドまたは式を、"非同期メソッド" と呼びます。    
+https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/async
+
+
+## Async および Await を使用した非同期プログラミング 
+https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/async/index    
+（サンプルソース付き）
+
+## Task クラス
+非同期操作を表します。
+
+
 ## Taskを極めろ！async/await完全攻略
 https://qiita.com/acple@github/items/8f63aacb13de9954c5da
+
 
 ### 1000ミリ秒待機するタスクの完了を待ち、その後"Done!"を出力する、というタスク
 ```cs
