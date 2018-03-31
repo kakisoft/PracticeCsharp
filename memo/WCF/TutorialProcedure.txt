@@ -1,0 +1,147 @@
+# WCFチュートリアル
+
+－１－
+新規作成→プロジェクト→Visual C#→WCF→WCFサービスライブラリ
+
+－２－
+IService1のインターフェース名変更
+IService1→ICalculator
+（自動で App.configの内容も変更される。）
+
+
+－３－
+Service1のクラス名変更
+Service1→CalculatorService
+（自動で App.configの内容も変更される。）
+
+
+－４－
+ファイル名変更
+IService1.cs→ICalculator.cs
+Service1.cs→CalculatorService.cs
+
+－５－
+ICalculator.cs
+サービスコントラクトの定義
+を追加
+
+
+－６－
+CalculatorService.cs
+サービスコントラクトを実装
+
+
+－７－
+ソリューションエクスプローラのルートにて右クリック
+追加→新しいプロジェクト→Visual C#→Windowsクラシックデスクトップ→コンソールアプリ
+「GettingStartedHost」とした。
+
+
+－８－
+ソリューションエクスプローラの
+GettingStartedHostにて右クリック→プロパティ
+ターゲットフレームワークを確認（4.5以上でOK）
+
+
+－９－
+ソリューションエクスプローラの GettingStartedHostプロジェクトの
+「参照」にて右クリック→参照の追加
+
+プロジェクト→
+namespaceを追加。（今回は「PracticeWCF」）
+
+
+－１０－
+ソリューションエクスプローラの GettingStartedHostプロジェクトの
+「参照」にて右クリック→参照の追加
+
+アセンブリ→フレームワーク
+「System.ServiceModel」を選択。（検索できる）
+
+
+－１１－
+GettingStartedHost
+┗Program.cs
+を編集。
+
+
+－１２－
+App.config の baseAddressを変更。
+
+<add baseAddress="http://localhost:8733/Design_Time_Addresses/PracticeWCF/Service1/" />
+
+　　↓
+
+<add baseAddress="http://localhost:8000/GettingStarted/CalculatorService/" />
+
+※※Visual Studioの起動は管理者モードを使用する※※
+
+
+－１３－
+Windows Communication Foundation クライアントを作成
+
+ソリューションのルートにて右クリックし→Add、New Project→コンソールアプリ
+を作成。
+プロジェクト名は「GettingStartedClient」とした。
+
+
+－１４－
+ソリューションエクスプローラの
+GettingStartedClientにて右クリック→プロパティ
+ターゲットフレームワークを確認（4.5以上でOK）
+
+
+－１５－
+ソリューションエクスプローラの GettingStartedClientプロジェクトの
+「参照」にて右クリック→参照の追加
+
+アセンブリ→フレームワーク
+「System.ServiceModel」を選択。（検索できる）
+
+
+－１６－
+サービス起動→終了
+
+ソリューションエクスプローラの GettingStartedClientプロジェクトの
+「参照」にて右クリック→サービス参照の追加
+
+（この辺、何だかよくわからない。
+　「探索」で、上記で定義したソリューションが探せたんで、それを追加した。）
+
+
+－１７－
+GettingStartedClient の App.config を編集。
+
+・・・するらしいんだけど、ここもよくわかんない。
+無編集で行けた。
+
+－１８－
+Windows Communication Foundation クライアントを使用
+
+GettingStartedClient の Program.csを編集
+
+
+－１９－
+起動。
+・・・するとすぐに終了するので、ソリューションのプロパティからスタートアッププロジェクトと順番を設定。
+
+
+－２０－
+起動。
+
+
+
+〓 所管 〓
+むずい。
+「メソッドを呼ぶだけでAPIがコールされる」（開発者は「APIをコールする」という意識をせず、「メソッドを呼ぶ」という感覚で行ける）
+という思想は面白いし、応用がききやすいと思うんだけど、「知らないとコードが追えない」というルールが多い。
+メンテナンス性もそんなに良くなさそう。
+手を加えなければいけないファイルがやたら多い印象。
+
+とりあえず、チュートリアルを一通り終わらせたけど、メソッドの追加はどうすんの？
+本体、サーバ、クライアント、それらのApp.configと、どこまで編集したらいいのか、さっぱりわからん。
+
+サーバさえ起動させておけば、HttpRequestを投げる事もできそうだけど、URLはどこじゃい。
+ってか、プロトコルはHTTPでいいの？　どうにもデフォルトは HTTPじゃない気がするので、どっかで変える必要があるかも。
+
+
