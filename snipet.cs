@@ -11,22 +11,22 @@ var result2 = strlist
 //==========================
 //   enum を foreachで回す
 //==========================
-        #region Enum定義
-        /// <summary>
-        /// 確保条件
-        /// </summary>
-        enum Signal
-        {
-            Red = 0,
-            Yellow = 1,
-            Blue = 2
-        }
-        Dictionary<int, string> _signalDict = new Dictionary<int, string>() {
-            {0, "赤"},
-            {1, "黄色"},
-            {2, "青" + Environment.NewLine + "と緑"},
-        };
-        #endregion
+#region Enum定義
+/// <summary>
+/// 条件
+/// </summary>
+enum Signal
+{
+    Red = 0,
+    Yellow = 1,
+    Blue = 2
+}
+Dictionary<int, string> _signalDict = new Dictionary<int, string>() {
+    {0, "赤"},
+    {1, "黄色"},
+    {2, "青" + Environment.NewLine + "と緑"},
+};
+#endregion
 
 //-----< enum を foreachで回す >-----
 foreach (int r in Enum.GetValues(typeof(Signal)))
