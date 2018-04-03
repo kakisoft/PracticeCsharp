@@ -3,3 +3,8 @@ silverlight で検索した情報が、そのまま使えたりする。
 
 ## Grid、ListBox、ListViewの使い分け
 基本、Grid。List系はバインディングの精度がそんなに良くないとのこと。
+
+## 全画面の共通設定（フォントサイズなど）
+App.xaml の
+<Application.Resources>
+に書くといいらしい。
