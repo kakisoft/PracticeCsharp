@@ -42,5 +42,10 @@ foreach (int r in Enum.GetValues(typeof(Signal)))
     t.Tag = r;
 }
 
-
+//==========================
+//   遅延バインディング
+//==========================
+dynamic testobj;
+testobj = DateTime.Now;
+Console.WriteLine(testobj.Month + "月");
 
