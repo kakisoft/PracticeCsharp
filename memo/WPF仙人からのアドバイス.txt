@@ -1,2 +1,5 @@
 ## 情報検索
 silverlight で検索した情報が、そのまま使えたりする。
+
+## Grid、ListBox、ListViewの使い分け
+基本、Grid。List系はバインディングの精度がそんなに良くないとのこと。
