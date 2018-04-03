@@ -10,6 +10,8 @@ using System.Linq;
 //condition が trueなら first_expressionが、falseなら second_expressionが返る。
 condition ? first_expression : second_expression;  
 
+SwipeLeft_Button.IsEnabled = (ScrollViewer01.ContentHorizontalOffset == 0) ? false : true;
+
 ## ?? 演算子（null 合体演算子）
 //nullの場合、右側の値を返す
  int y = x ?? -1;
