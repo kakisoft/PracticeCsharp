@@ -26,6 +26,24 @@ searchButton_Click
 自分で作ってもいいみたい。
 ```
 
+## 名前空間について
+```
+名前空間は、基本「System.Windows.Controls」
+
+（例：ListView）
+System.Object
+  System.Windows.Threading.DispatcherObject
+    System.Windows.DependencyObject
+      System.Windows.Media.Visual
+        System.Windows.UIElement
+          System.Windows.FrameworkElement
+            System.Windows.Controls.Control
+              System.Windows.Controls.ItemsControl
+                System.Windows.Controls.Primitives.Selector
+                  System.Windows.Controls.ListBox
+                    System.Windows.Controls.ListView
+```
+
 ## WPF Window
 独立して表示可能な存在、PageやUserControlのホストになる存在。    
 
