@@ -20,6 +20,7 @@ Grid（ルート）→StackPanle→Button
 【バブルイベント】
 button→StackPanel→Grid（ルートの）
 
+イベントによって異なるらしい。（MouseClickイベントなら上から、とか。）
 
 
 ## バインディングについてのメモ
