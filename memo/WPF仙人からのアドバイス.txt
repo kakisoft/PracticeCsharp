@@ -11,6 +11,16 @@ App.xaml の
 <Application.Resources>
 に書くといいらしい。
 
+## ＜ルーティングイベント＞（総称）
+※上位＝ルート（最上位のGrid）
+
+【トンネリングイベント】
+Grid（ルート）→StackPanle→Button
+
+【バブルイベント】
+button→StackPanel→Grid（ルートの）
+
+
 
 ## バインディングについてのメモ
 ユーザが触らないものは、双方向
