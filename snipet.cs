@@ -49,3 +49,17 @@ dynamic testobj;
 testobj = DateTime.Now;
 Console.WriteLine(testobj.Month + "月");
 
+
+
+//==========================
+//  デバッグ用ログインユーザ
+//==========================
+        public SystemUserLoginWindow()
+        {
+            InitializeComponent();
+#if DEBUG
+            this.textboxUserId.Text = "TestUser";
+            this.textboxLoginId.Text = "1";
+            this.passwordBoxLoginPassword.Password = "1";
+#endif
+        }
