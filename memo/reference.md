@@ -44,3 +44,13 @@ https://mva.microsoft.com/
 https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=Topic&f%5B0%5D.Value=WPF%20%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
 
 ________________________________________________
+
+## 色々参考になるサイト
+
+### OITA: Oika's Information Technological Activities
+http://oita.oika.me/
+
+### Ararami Atudio
+https://araramistudio.jimdo.com/
+
+
