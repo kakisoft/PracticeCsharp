@@ -46,3 +46,9 @@ private async Task GetHttpResponse03Async()
     var response = await httpClient.PostAsync("http://localhost/", content);
 }
 ```
+
+## Task
+Taskで取得した値を取り出すには、await構文を使用する。
+```cs
+string urlContents = await getStringTask;
+```
