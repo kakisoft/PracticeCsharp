@@ -1,12 +1,13 @@
+## Async および Await を使用した非同期プログラミング 
+https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/async/index    
+（サンプルソース付き）
+
+
 ## async
 非同期であることを指定します。     
 の修飾子が使用されているメソッドまたは式を、"非同期メソッド" と呼びます。    
 https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/async
 
-
-## Async および Await を使用した非同期プログラミング 
-https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/async/index    
-（サンプルソース付き）
 
 ## Task クラス
 非同期操作を表します。

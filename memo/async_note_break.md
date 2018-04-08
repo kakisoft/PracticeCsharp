@@ -1,6 +1,9 @@
 ## asyc
- * async void (戻り値なし)の場合、呼び出し元に awaitは不要
- * async Task（戻り値がTask）の場合、呼び出し元に awaitを記述
+ * 非同期メソッドには async キーワードを付ける。
+ * async void の場合、呼び出し元に awaitは不要
+ * async Task の場合、呼び出し元に awaitを記述
+ * async Task\<T>　（例：Task\<int>）は、return で intが返る。
+ * 非同期メソッドの末尾は「Async」とする（慣習）
 
 ```cs
 private void Button01_Click(object sender, RoutedEventArgs e)
