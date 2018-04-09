@@ -42,6 +42,29 @@ foreach (int r in Enum.GetValues(typeof(Signal)))
     t.Tag = r;
 }
 
+
+//==========================
+//   enumをエレメントのタグにぶち込み、イベントの発生元として検知
+//==========================
+enum signalDict : int
+{
+    Red = 0,
+    Blue = 1,
+    Yello = 2
+}
+
+t.Click += (sender, e) => buttonA_Clicked(sender);
+
+private void buttonA_Clicked(object sender)
+{
+
+    if ((signalDict)((CheckBox)sender).Tag == signalDict.Blue)
+    {
+        Console.WriteLine("aaaa");
+    }
+}
+
+
 //==========================
 //   遅延バインディング
 //==========================
