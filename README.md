@@ -1,6 +1,8 @@
 # PracticeCsharp
 C#練習用
       
+      
+      
 WPFとWCFは分けた。      
 
 ## WPF練習用
