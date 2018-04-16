@@ -17,3 +17,40 @@ System.Object
 ## リストビューをクリア
 myListView.Items.Clear();
 
+
+## アイテムセット
+```
+myListView01.Items.Add(dispElementString);
+
+
+※ヘッダの設定をしていないと、おかしな表示になる
+myListView01.Items.Add(new string[] { "1", "2", "3" });
+
+```
+
+## ヘッダ非表示
+標準では無いみたい。
+```
+<ListView x:Name="myListView01" Width="150">
+    <ListView.View>
+        <GridView>
+            <GridView.ColumnHeaderContainerStyle>
+                <Style TargetType="GridViewColumnHeader">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                </Style>
+            </GridView.ColumnHeaderContainerStyle>
+            
+            
+            <GridViewColumn Header="id"   DisplayMemberBinding="{Binding [0]}" />
+            <GridViewColumn Header="text" DisplayMemberBinding="{Binding [1]}" />
+        </GridView>
+    </ListView.View>
+</ListView>
+```
+
+
+#### その他 雑記
+```
+SubItems って何者？
+```
+
