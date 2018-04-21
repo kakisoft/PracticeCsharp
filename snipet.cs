@@ -15,16 +15,16 @@ var result2 = strlist
 /// <summary>
 /// 条件
 /// </summary>
-enum Signal
+enum Signal : int
 {
     Red = 0,
     Yellow = 1,
     Blue = 2
 }
 Dictionary<int, string> _signalDict = new Dictionary<int, string>() {
-    {0, "赤"},
-    {1, "黄色"},
-    {2, "青" + Environment.NewLine + "と緑"},
+    {(int)Signal.Red   , "赤"},
+    {(int)Signal.Yellow, "黄色"},
+    {(int)Signal.Blue  , "青" + Environment.NewLine + "と緑"},
 };
 #endregion
 
@@ -42,10 +42,17 @@ foreach (int r in Enum.GetValues(typeof(Signal)))
     t.Tag = r;
 }
 
+//=============================
+//  リストの中身を値渡しでコピー
+//=============================
 
-//==========================
+//コンストラクタの第一引数に、コピー元を渡す。
+myList01 = new List<someInfo>(myList02);
+
+
+//=============================
 //   enumをエレメントのタグにぶち込み、イベントの発生元として検知
-//==========================
+//=============================
 enum signalDict : int
 {
     Red = 0,
