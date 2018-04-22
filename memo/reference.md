@@ -53,4 +53,6 @@ http://oita.oika.me/
 ### Ararami Atudio
 https://araramistudio.jimdo.com/
 
+### PG日誌
+http://takachan.hatenablog.com/
 
