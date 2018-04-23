@@ -19,6 +19,12 @@ int x = 256;
 string  s = x.ToString();
 ```
 
+## 参照→プリミティブ（nullの可能性がある場合）
+```cs
+int intSeriesNo = seatContent.SeriesNo;
+int.TryParse(item.SeriesNo, out intSeriesNo);
+```
+
 ## note
 ```cs
   int ticketOfNumber;
