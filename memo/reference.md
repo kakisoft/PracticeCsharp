@@ -6,6 +6,9 @@ https://msdn.microsoft.com/ja-jp/library/mt472912(v=vs.110).aspx
 
 ## 検索２
 https://docs.microsoft.com/ja-jp/dotnet/api/
+
+## WPF アーキテクチャ
+https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/wpf-architecture
 ________________________________________________
 
 ## [C#]ActiveDirectory（LDAP）を使って認証
