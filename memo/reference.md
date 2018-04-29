@@ -9,6 +9,10 @@ https://docs.microsoft.com/ja-jp/dotnet/api/
 
 ## WPF アーキテクチャ
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/wpf-architecture
+
+## Blend for Visual Studio
+https://www.google.co.jp/search?q=blend+for+visual+studio&oq=blend+for+visual+studio&aqs=chrome..69i57j0l5.4254j0j8&sourceid=chrome&ie=UTF-8
+
 ________________________________________________
 
 ## [C#]ActiveDirectory（LDAP）を使って認証
