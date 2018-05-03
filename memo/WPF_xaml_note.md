@@ -125,7 +125,7 @@ http://yujiro15.net/YKSoftware/tips_UserControl.html
 https://garafu.blogspot.jp/2016/01/wpf-dependencyproperty.html
 
 ## ControlTemplate：カスタムテンプレート
-コントロールの外観を変える。    
+ControlTemplateは、コントロールの外観を指定します。 コントロールにControlTemplateがない場合、コントロールはアプリケーションに表示されません。     
 https://msdn.microsoft.com/ja-jp/library/system.windows.controls.controltemplate(v=vs.110).aspx
     
 https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/controls/customizing-the-appearance-of-an-existing-control
