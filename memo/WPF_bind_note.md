@@ -43,7 +43,8 @@ https://water2litter.net/gin/?p=1401
 TextBlock は、双方向バインディングの設定だとか INotifyPropertyChangedの実装とかは不要で、View側に通知される？
 
 ***（参考サイト）***    
-http://blog.okazuki.jp/entry/2014/09/15/201110
+http://blog.okazuki.jp/entry/2014/09/15/201110    
+http://blog.okazuki.jp/entry/2016/09/15/214319    
 
 ### 正しいと思うけど、エラーが出る（名前空間が認識されないなど）
 とりあえずリビルド。それで行ける事がある。    
