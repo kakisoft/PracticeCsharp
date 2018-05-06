@@ -3,7 +3,7 @@ NuGetで「SQLite」
 ## System.Data.SQLite
 全部入り。    
 Entity Frameworkや、SQLiteのLINQ拡張などが全部入ったセット。    
-気づけば実行ファイルのディレクトリが大変なことになる。    
+実行ファイルのディレクトリにファイルがいっぱい増える。    
 
 #### 参考サイト
 ##### 結構詳しく書いてる

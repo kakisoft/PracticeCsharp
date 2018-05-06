@@ -17,6 +17,16 @@ SwipeLeft_Button.IsEnabled = (ScrollViewer01.ContentHorizontalOffset == 0) ? fal
  int y = x ?? -1;
 */
 
+/*
+@ - エスケープ文字を使わずに、「/」や改行が表現できる。
+string str1 = "C:\\xampp\\htdocs\\sample";
+string str2 = @"C:\xampp\htdocs\sample";
+
+Console.WriteLine(str1 == str2); //True
+
+
+*/
+
 //======< Sample01 >=====
 public class Customer
 {
