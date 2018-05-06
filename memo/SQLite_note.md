@@ -4,6 +4,11 @@ NuGetで「SQLite」
 全部入り。    
 Entity Frameworkや、SQLiteのLINQ拡張などが全部入ったセット。    
 実行ファイルのディレクトリにファイルがいっぱい増える。    
+```
+ツール→NuGetパッケージマネージャー→パッケージマネージャーコンソール
+
+Install-Package System.Data.SQLite
+```
 
 #### 参考サイト
 ##### 結構詳しく書いてる
@@ -31,3 +36,7 @@ http://oita.oika.me/2018/02/12/asp-dot-net-core-ef-sqlite/
 NuGetから以下のパッケージをインストールしておく。
  * Install-Package EntityFramework -Version 4.2.0
 
+___________________________________________
+
+## 良さげな動画
+https://www.youtube.com/watch?v=TrJcKHMe6Y8
