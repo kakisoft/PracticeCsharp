@@ -432,6 +432,6 @@ fefEllpse.SetValue( FrameworkElement.WidthProperty, DOB_10 );
 ```
 
 ## TextBox 縦位置中央揃え
-```
+```xml
 VerticalContentAlignment="Center"
 ```
