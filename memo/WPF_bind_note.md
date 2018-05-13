@@ -65,4 +65,6 @@ http://www.atmarkit.co.jp/ait/articles/1010/08/news123.html
  * DataGridに流し込むデータ（ItemsSource="{Binding}"）
 
 ## 今さら入門するMVVMに必要な技術要素
-http://blog.okazuki.jp/entry/2016/09/15/214319
+http://blog.okazuki.jp/entry/2016/09/15/214319    
+Xamarin.Formsでは、BindableObjectで定義されたBindingContextプロパティに設定されたオブジェクトがBindingのPathの起点になります。    
+UWPでは、FrameworkElementで定義されたDataContextプロパティに設定されたオブジェクトがBindingのPathの起点になります。
