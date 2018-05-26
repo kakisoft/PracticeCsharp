@@ -14,6 +14,9 @@ https://docs.microsoft.com/ja-jp/dotnet/framework/wpf/advanced/wpf-architecture
 https://www.google.co.jp/search?q=blend+for+visual+studio&oq=blend+for+visual+studio&aqs=chrome..69i57j0l5.4254j0j8&sourceid=chrome&ie=UTF-8
 
 ________________________________________________
+## json2csharp
+http://json2csharp.com/
+________________________________________________
 
 ## [C#]ActiveDirectory（LDAP）を使って認証
 https://anopara.net/2014/05/19/cactivedirectory%EF%BC%88ldap%EF%BC%89%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E8%AA%8D%E8%A8%BC/
