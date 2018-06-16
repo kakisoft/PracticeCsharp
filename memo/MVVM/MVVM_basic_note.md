@@ -33,3 +33,15 @@ DataContext
 であったとしても、右辺にはプロパティを記述。
 ```
 
+```
+・M
+データ（≒テーブル）の管理
+
+・V
+ユーザインターフェース
+
+・VM
+Model から View へ出力データを渡す
+View から Model へ入力データを渡す
+```
+https://docs.microsoft.com/ja-jp/dotnet/standard/cross-platform/using-portable-class-library-with-model-view-view-model
