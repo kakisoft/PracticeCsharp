@@ -1,3 +1,6 @@
+## Microsoft：名前付けのガイドライン
+https://docs.microsoft.com/ja-jp/dotnet/standard/design-guidelines/naming-guidelines
+
 ## C# CODING GUIDELINES
 
 |          種類             |    例                                                                            |
