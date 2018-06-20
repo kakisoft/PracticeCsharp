@@ -45,3 +45,11 @@ Model から View へ出力データを渡す
 View から Model へ入力データを渡す
 ```
 https://docs.microsoft.com/ja-jp/dotnet/standard/cross-platform/using-portable-class-library-with-model-view-view-model
+
+```
+CommandParameter
+　⇒ ViewModelが知らないオブジェクトに対して、何かしらの働きかけをする場合に使用する。
+
+
+別に使わないでもいい。というか使わないでも十分解決できる。
+```
